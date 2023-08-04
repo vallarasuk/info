@@ -1,4 +1,4 @@
-  /* Navbar */
+/* For Light Mode */
 .custom-navbar {
   background-color: #333;
   padding: 15px;
@@ -7,15 +7,16 @@
   left: 0;
   width: 100%;
   z-index: 999;
+  color: #fff; /* Set the default text color for light mode */
 }
 
-.nav-link {
+.custom-navbar .nav-link {
   color: #fff;
   padding: 10px 15px;
   text-decoration: none;
 }
 
-.nav-link:hover {
+.custom-navbar .nav-link:hover {
   background-color: #555;
   border-radius: 5px;
 }
@@ -44,9 +45,6 @@
 .slide-menu.show {
   left: 0;
 }
-
-
-/* Existing styles for the desktop navbar */
 
 /* Mobile Navbar */
 .mobile-navbar {

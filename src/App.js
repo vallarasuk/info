@@ -4,7 +4,6 @@ import { HelmetProvider } from "react-helmet-async";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
-import Switch from "react-switch";
 import "./Components/Styles/App.css";
 
 // Lazy load components
@@ -15,7 +14,6 @@ const Contact = lazy(() => import("./Components/Contact"));
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Simulate loading time with useEffect hook
   useEffect(() => {
@@ -24,43 +22,19 @@ const App = () => {
     }, 2000); // Adjust the time as needed
   }, []);
 
-  // Toggle dark mode
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-  };
-
   return (
     <HelmetProvider>
       <Router>
         {/* Navbar section */}
-        <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <div className={`app-wrapper ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-          {/* Add the switch toggle */}
-          <div className="dark-mode-toggle">
-            <Switch
-              onChange={toggleDarkMode}
-              checked={isDarkMode}
-              onColor="#218c74"
-              offColor="#e74c3c"
-              onHandleColor="#fff"
-              offHandleColor="#fff"
-              handleDiameter={30}
-              uncheckedIcon={false}
-              checkedIcon={false}
-              height={20}
-              width={48}
-              className="react-switch"
-              id="dark-mode-toggle"
-            />
-          </div>
-
+        <Navbar />
+        <div className="app-wrapper">
           <Suspense fallback={<div className="loading-container">Loading...</div>}>
             {/* Add loading animation with icons */}
             {isLoading ? (
               <div className="loading-container">
                 <div className="icon">
                   {/* Use FontAwesome or any other icon library */}
-                  <i className={`fa fa-spinner fa-spin fa-3x ${isDarkMode ? "text-white" : "text-black"}`}></i>
+                  <i className="fa fa-spinner fa-spin fa-3x text-black"></i>
                 </div>
               </div>
             ) : (
@@ -89,7 +63,7 @@ const App = () => {
           </Suspense>
         </div>
         {/* Footer section */}
-        <Footer isDarkMode={isDarkMode} />
+        <Footer />
       </Router>
     </HelmetProvider>
   );
