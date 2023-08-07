@@ -2,11 +2,11 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { animated, useSpring } from "react-spring";
 import "./Styles/Home.css";
-import homepageContent from "./Constant/HomeContent";
+import HomeContent from "./Constant/HomeContent"; // Import the HomeContent
 import Skill from "./Skills"; // Import the Skill component
 
 const Home = () => {
-  // Destructuring the data from homepageContent.json
+  // Destructuring the data from HomeContent
   const {
     title,
     description,
@@ -15,7 +15,7 @@ const Home = () => {
     ctaButtonLink,
     skills,
     skillsTitle,
-  } = homepageContent;
+  } = HomeContent;
 
   // Text animation configuration
   const textAnimation = useSpring({

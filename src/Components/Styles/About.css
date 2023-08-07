@@ -1,0 +1,25 @@
+/* src/components/AboutUs/TimelineDesign.css */
+.timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-item {
+    opacity: 0;
+    transform: translateX(-50px);
+    margin-bottom: 20px;
+  }
+  
+  .date {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .scroll-button {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Styles for attractive fonts can be added to the components as needed. */
+  
