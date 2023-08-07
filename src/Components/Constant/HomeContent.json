@@ -1,0 +1,22 @@
+
+
+{
+  "title": "Welcome to Your Portfolio",
+  "description": [
+    "Hello, I'm [Your Name], a passionate web developer with expertise in React and other web technologies. This is my portfolio website where I showcase my projects and skills. Take a look around and get to know more about me and my work.",
+    "Feel free to explore the projects I've worked on and don't hesitate to reach out if you'd like to discuss any collaboration or have any questions. Thank you for visiting!"
+  ],
+  "imageURL": "https://example.com/your-image.jpg",
+  "ctaButtonText": "View Projects",
+  "ctaButtonLink": "/projects",
+  "skillsTitle": "Skills and Expertise:",
+  "skills": [
+    { "name": "React", "icon": "fab fa-react" },
+    { "name": "JavaScript", "icon": "fab fa-js" },
+    { "name": "HTML", "icon": "fab fa-html5" },
+    { "name": "CSS", "icon": "fab fa-css3-alt" },
+    { "name": "Bootstrap", "icon": "fab fa-bootstrap" },
+    { "name": "Git", "icon": "fab fa-git" },
+    { "name": "Responsive Web Design", "icon": "fas fa-mobile-alt" }
+  ]
+}

@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { Navbar as BootstrapNavbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { useMediaQuery } from "react-responsive";
 
 const CustomNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const isXlDevice = useMediaQuery({ minWidth: 1200 });
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -19,7 +21,7 @@ const CustomNavbar = () => {
         className="custom-navbar"
         sticky="top" // Add sticky="top" to make the navbar sticky
       >
-        <Container fluid>
+        <Container fluid={isXlDevice}>
           <BootstrapNavbar.Brand href="/">Your Logo</BootstrapNavbar.Brand>
           <BootstrapNavbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -45,7 +47,6 @@ const CustomNavbar = () => {
           </BootstrapNavbar.Collapse>
         </Container>
       </BootstrapNavbar>
-
     </>
   );
 };

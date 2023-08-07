@@ -1,0 +1,14 @@
+/* Add this CSS in your style file or App.css */
+.home-section {
+    min-height: 70vh;
+    /* Change this to 80vh if you want 80vh */
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        min-height: 75vh;
+        /* Change this to 75vh if you want 75vh on mobile devices */
+    }
+}

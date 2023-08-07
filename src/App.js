@@ -25,9 +25,9 @@ const App = () => {
   return (
     <HelmetProvider>
       <Router>
+        <div className="app-wrapper">
         {/* Navbar section */}
         <Navbar />
-        <div className="app-wrapper">
           <Suspense fallback={<div className="loading-container">Loading...</div>}>
             {/* Add loading animation with icons */}
             {isLoading ? (
@@ -61,9 +61,9 @@ const App = () => {
               </Routes>
             )}
           </Suspense>
-        </div>
         {/* Footer section */}
         <Footer />
+        </div>
       </Router>
     </HelmetProvider>
   );

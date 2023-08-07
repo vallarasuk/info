@@ -31,7 +31,7 @@
 
 /* Set max width to 1920px for the entire content */
 .app-wrapper {
-  max-width: 1920px;
+  max-width: 1720px;
   margin: 0 auto; /* Center the content horizontally */
   padding: 0 15px; /* Add some horizontal padding to the content */
 }
