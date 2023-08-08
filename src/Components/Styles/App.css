@@ -1,11 +1,23 @@
 /* Colors */
 :root {
-  --primary-color: #333;      /* Background and primary text color */
-  --secondary-color: #555;    /* Hover background color */
-  --accent-color: #fff;       /* Accent color for icons */
-  --light-bg-color: #f0f0f0;  /* Light mode: Background color */
-  --light-text-color: #333;   /* Light mode: Primary text color */
-  --light-hover-bg-color: #f0f0f0; /* Light mode: Hover background color */
+  --primary-color: #333;
+  /* Background and primary text color */
+  --secondary-color: #555;
+  /* Hover background color */
+  --accent-color: #fff;
+  /* Accent color for icons */
+  --light-bg-color: #f0f0f0;
+  /* Light mode: Background color */
+  --light-text-color: #333;
+  /* Light mode: Primary text color */
+  --light-hover-bg-color: #f0f0f0;
+  /* Light mode: Hover background color */
+  --dark-bg-color: #333;
+  /* Dark mode: Background color */
+  --dark-text-color: #fff;
+  /* Dark mode: Primary text color */
+  --dark-hover-bg-color: #555;
+  /* Dark mode: Hover background color */
 }
 
 /* Example animated class */
@@ -14,7 +26,12 @@
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
 
@@ -32,15 +49,18 @@
 /* Set max width to 1920px for the entire content */
 .app-wrapper {
   max-width: 1720px;
-  margin: 0 auto; /* Center the content horizontally */
-  padding: 0 15px; /* Add some horizontal padding to the content */
+  margin: 0 auto;
+  /* Center the content horizontally */
+  padding: 0 15px;
+  /* Add some horizontal padding to the content */
 }
 
 .loading-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh;
+  /* Adjust the height as needed */
 }
 
 /* Common styles for both modes */
@@ -75,3 +95,4 @@
 .icon {
   color: var(--accent-color);
 }
+

@@ -4,6 +4,7 @@ import { Navbar as BootstrapNavbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
+import "../Styles/Navbar.css"
 
 const CustomNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,7 +20,7 @@ const CustomNavbar = () => {
       <BootstrapNavbar
         expand="lg"
         className="custom-navbar"
-        sticky="top" // Add sticky="top" to make the navbar sticky
+        sticky="top"
       >
         <Container fluid={isXlDevice}>
           <BootstrapNavbar.Brand href="/">Your Logo</BootstrapNavbar.Brand>

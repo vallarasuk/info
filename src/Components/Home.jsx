@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { animated, useSpring } from "react-spring";
+import { Link } from "react-router-dom";
 import "./Styles/Home.css";
 import HomeContent from "./Constant/HomeContent"; // Import the HomeContent
 import Skill from "./Skills"; // Import the Skill component
@@ -26,12 +27,12 @@ const Home = () => {
   });
 
   // Image animation configuration
-  const imageAnimation = useSpring({
-    opacity: 1,
-    scale: 1,
-    from: { opacity: 0, scale: 0.9 },
-    config: { duration: 1000, delay: 500 },
-  });
+  // const imageAnimation = useSpring({
+  //   opacity: 1,
+  //   scale: 1,
+  //   from: { opacity: 0, scale: 0.9 },
+  //   config: { duration: 1000, delay: 500 },
+  // });
 
   return (
     <>
@@ -64,18 +65,20 @@ const Home = () => {
         {/* Content for the home section */}
         <div className="container-fluid">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-12 text-center">
               <animated.div style={textAnimation}>
                 <h2>{title}</h2>
                 {description.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
-                <a href={ctaButtonLink} className="btn btn-primary">
+                {/* Replace the anchor tag with Link component */}
+                <Link to={ctaButtonLink} className="btn btn-primary">
                   {ctaButtonText}
-                </a>
+                </Link>
               </animated.div>
             </div>
-            <div className="col-lg-6">
+            {/* Uncomment the following section to display the image */}
+            {/* <div className="col-lg-6">
               <animated.div style={imageAnimation} className="text-center">
                 <img
                   src={imageURL}
@@ -87,7 +90,7 @@ const Home = () => {
                   }}
                 />
               </animated.div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -96,6 +99,8 @@ const Home = () => {
       <section>
         <Skill skills={skills} skillsTitle={skillsTitle} />
       </section>
+
+
     </>
   );
 };
