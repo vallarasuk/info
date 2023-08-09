@@ -4,7 +4,8 @@ import { Navbar as BootstrapNavbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
-import "../Styles/Navbar.css"
+import "../Styles/Navbar.css";
+import HomePageData from "../Constant/HomeContent";
 
 const CustomNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,13 +18,16 @@ const CustomNavbar = () => {
   return (
     <>
       {/* Hide the Bootstrap Navbar on mobile devices */}
-      <BootstrapNavbar
-        expand="lg"
-        className="custom-navbar"
-        sticky="top"
-      >
+      <BootstrapNavbar expand="lg" className="custom-navbar" sticky="top">
         <Container fluid={isXlDevice}>
-          <BootstrapNavbar.Brand href="/">Your Logo</BootstrapNavbar.Brand>
+          <BootstrapNavbar.Brand className="text-white text-uppercase" href="/">
+            <img
+              // src={HomePageData.iconImage}
+              src="https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6"
+              alt="logo icon"
+              className="logo-icon"
+            />
+          </BootstrapNavbar.Brand>
           <BootstrapNavbar.Toggle
             aria-controls="responsive-navbar-nav"
             onClick={toggleMenu}

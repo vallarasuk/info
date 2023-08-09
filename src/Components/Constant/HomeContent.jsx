@@ -15,7 +15,7 @@ library.add(faReact, faJs, faHtml5, faCss3Alt, faBootstrap, faGit, faMobileAlt);
 // Data for the home page
 const HomePageData = {
   // card Details
-  // cardImage: require("../Assects/Profile.jpg"),
+  iconImage: require("../Assects/Profile.jpg"),
   titleIcon:
     "https://us.123rf.com/450wm/berkut2011/berkut20111309/berkut2011130900093/21991120-abstract-icon-based-on-the-letter.jpg?ver=6",
   cardImage:
