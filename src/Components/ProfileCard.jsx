@@ -5,10 +5,12 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons"; // Import the new icons
 import HomeContent from "./Constant/HomeContent";
 import { useSpring, animated } from "react-spring";
 import "./ProfileCard.css";
+import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
 
 const ProfileCard = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,9 +18,15 @@ const ProfileCard = () => {
     cardImage,
     name,
     role,
-    twitterProfileLink,
-    instagramProfileLink,
+    // bio,
     linkedInProfileLink,
+    githubProfileLink,
+    instagramProfileLink,
+    twitterProfileLink,
+    email,
+    mobile,
+    mobileTo,
+    emailTo,
   } = HomeContent;
 
   useEffect(() => {
@@ -53,25 +61,56 @@ const ProfileCard = () => {
           />
           <h2>{name}</h2>
           <p>{role}</p>
-          <div className="profile-card-social-links">
-            <Link
-              to={twitterProfileLink}
-              className="social-link twitter shadow"
-            >
-              <FontAwesomeIcon size="xl" icon={faTwitter} />
-            </Link>
-            <Link
-              to={instagramProfileLink}
-              className="social-link instagram shadow"
-            >
-              <FontAwesomeIcon size="xl" icon={faInstagram} />
-            </Link>
-            <Link
-              to={linkedInProfileLink}
-              className="social-link linkedin shadow"
-            >
-              <FontAwesomeIcon size="xl" icon={faLinkedin} />
-            </Link>
+          {/* <p>{bio}</p> */}
+          <p>{email}</p>
+          <p>{mobile}</p>
+          <div className="social-links-container">
+            <div className="row">
+              <div className="col">
+                <Link
+                  to={linkedInProfileLink}
+                  className="social-link linkedin shadow"
+                >
+                  <FontAwesomeIcon size="xl" icon={faLinkedin} />
+                </Link>
+              </div>
+              <div className="col">
+                <Link
+                  to={githubProfileLink}
+                  className="social-link github shadow"
+                >
+                  <FontAwesomeIcon size="xl" icon={faGithub} />
+                </Link>
+              </div>
+              <div className="col">
+                <Link
+                  to={instagramProfileLink}
+                  className="social-link instagram shadow"
+                >
+                  <FontAwesomeIcon size="xl" icon={faInstagram} />
+                </Link>
+              </div>
+            </div>
+            <div className="row mt-3">
+              <div className="col">
+                <Link
+                  to={twitterProfileLink}
+                  className="social-link twitter shadow"
+                >
+                  <FontAwesomeIcon size="xl" icon={faTwitter} />
+                </Link>
+              </div>
+              <div className="col">
+                <Link to={mobileTo} className="social-link mobile shadow">
+                  <FontAwesomeIcon size="xl" icon={faMobile} />
+                </Link>
+              </div>
+              <div className="col">
+                <Link to={emailTo} className="social-link mail shadow">
+                  <FontAwesomeIcon size="xl" icon={faEnvelope} />
+                </Link>
+              </div>
+            </div>
           </div>
         </>
       )}

@@ -1,4 +1,3 @@
-import { faMobileAlt } from "@fortawesome/free-solid-svg-icons/faMobileAlt";
 import {
   faReact,
   faJs,
@@ -7,10 +6,25 @@ import {
   faBootstrap,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faMobileAlt,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 // Add the imported icons to the Font Awesome library
-library.add(faReact, faJs, faHtml5, faCss3Alt, faBootstrap, faGit, faMobileAlt);
+library.add(
+  faReact,
+  faJs,
+  faHtml5,
+  faCss3Alt,
+  faBootstrap,
+  faGit,
+  faMobileAlt,
+  faEnvelope,
+  faPhone
+);
 
 // Data for the home page
 const HomePageData = {
@@ -22,9 +36,15 @@ const HomePageData = {
     "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
   name: "Vallarasu Kanthasamy",
   role: "React Front End Developer",
-  instagramProfileLink: "",
-  twitterProfileLink: "",
-  linkedInProfileLink: "",
+  // bio: "Passionate web developer with expertise in React and other web technologies.",
+  email: "vallarasuk143@gmail.com",
+  emailTo: "mailto:vallarasuk143@gmail.com",
+  mobile: "8122992143",
+  mobileTo: "tel:8122992143",
+  instagramProfileLink: "https://www.instagram.com/vallarasu_kanthasamy/?hl=en",
+  twitterProfileLink: "https://twitter.com/vallarasuk143",
+  linkedInProfileLink: "https://www.linkedin.com/in/vallarasu-k/",
+  githubProfileLink: "https://github.com/vallarasuk",
   title: "Welcome to Your Portfolio",
   description: [
     "Hello, I'm Vallarasu K, a passionate web developer with expertise in React and other web technologies. This is my portfolio website where I showcase my projects and skills. Take a look around and get to know more about me and my work.",

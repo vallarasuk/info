@@ -41,6 +41,21 @@
     /* Instagram Pink */
 }
 
+/* GitHub color */
+.social-link.github {
+    background-color: black;
+}
+
+/* Call color */
+.social-link.mobile {
+    background-color: green;
+}
+
+/* Mail color */
+.social-link.mail {
+    background-color: gray;
+}
+
 /* LinkedIn color */
 .social-link.linkedin {
     background-color: #0077b5;
@@ -123,6 +138,7 @@ p {
 
 @media (max-width: 1199.98px) {
     .left-side {
-        height: 70vh; /* Adjust height for devices smaller than lg */
+        height: 70vh;
+        /* Adjust height for devices smaller than lg */
     }
 }
