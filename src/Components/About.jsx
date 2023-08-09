@@ -2,7 +2,7 @@
 import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { Link } from "react-scroll";
-import "./Styles/About.css"
+import "./Styles/About.css";
 
 const About = () => {
   // Animation configuration for the timeline items
@@ -14,13 +14,15 @@ const About = () => {
   });
 
   return (
-    <section id="timeline">
+    <section id="timeline pt-5">
       <h2>My Journey</h2>
       <div className="timeline">
         <animated.div style={itemAnimation} className="timeline-item">
           <div className="timeline-content">
             <h3>Education</h3>
-            <p>Graduated with a degree in Computer Science from XYZ University.</p>
+            <p>
+              Graduated with a degree in Computer Science from XYZ University.
+            </p>
           </div>
           <span className="date">2015 - 2018</span>
         </animated.div>
@@ -28,7 +30,10 @@ const About = () => {
         <animated.div style={itemAnimation} className="timeline-item">
           <div className="timeline-content">
             <h3>Professional Experience</h3>
-            <p>Worked as a Front-end Developer at ABC Tech, contributing to various web development projects.</p>
+            <p>
+              Worked as a Front-end Developer at ABC Tech, contributing to
+              various web development projects.
+            </p>
           </div>
           <span className="date">2018 - Present</span>
         </animated.div>

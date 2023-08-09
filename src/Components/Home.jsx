@@ -11,11 +11,14 @@ const Home = () => {
   const {
     title,
     description,
-    imageURL,
+    // imageURL,
     ctaButtonText,
     ctaButtonLink,
     skills,
     skillsTitle,
+    name,
+    role,
+    titleIcon,
   } = HomeContent;
 
   // Text animation configuration
@@ -40,7 +43,7 @@ const Home = () => {
       <section className="home-section">
         {/* Helmet for SEO */}
         <Helmet>
-          <title>Your Name - Home</title>
+          <title>{name}</title>
           <meta
             name="description"
             content="Welcome to my portfolio home page."
@@ -50,17 +53,24 @@ const Home = () => {
             name="keywords"
             content="portfolio, web development, projects, React"
           />
-          <meta name="author" content="Your Name" />
-          <meta property="og:title" content={`Your Name - ${title}`} />
+          <meta name="author" content={`${name} - ${role}`} />
+          <meta property="og:title" content={`${name}`} />
           <meta property="og:description" content={description.join(" ")} />
-          <meta property="og:image" content={imageURL} />
+          <meta property="og:image" content={titleIcon} />
           <meta property="og:url" content="https://example.com/" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@your-twitter-handle" />
-          <meta name="twitter:title" content={`Your Name - ${title}`} />
+          <meta name="twitter:title" content={`${name} - ${role}`} />
           <meta name="twitter:description" content={description.join(" ")} />
-          <meta name="twitter:image" content={imageURL} />
+          <meta name="twitter:image" content={titleIcon} />
+          <link rel="icon" href={titleIcon} type="image/png" />
+          <link
+            rel="shortcut icon"
+            href="./Assects/Profile.jpg"
+            type="image/x-icon"
+          />
+          {/* Set favicon */}
         </Helmet>
         {/* Content for the home section */}
         <div className="container-fluid">
@@ -99,8 +109,6 @@ const Home = () => {
       <section>
         <Skill skills={skills} skillsTitle={skillsTitle} />
       </section>
-
-
     </>
   );
 };
