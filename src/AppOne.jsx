@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./Components/Navbar/Navbar";
-// import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
+import "./Components/Styles/App.css";
 import "./Components/Styles/AppOne.css";
 import ProfileCard from "./Components/Lib/ProfileCard";
 
@@ -38,7 +39,7 @@ const AppOne = () => {
               </div>
 
               {/* Right side - Other content */}
-              <div className="col-lg-8 px-lg-3 pt-md-5">
+              <div className="col-lg-8 px-lg-3 py-md-5">
                 <div className="split-screen-container pt-md-4">
                   <Suspense
                     fallback={
@@ -78,12 +79,11 @@ const AppOne = () => {
                     )}
                   </Suspense>
                 </div>
+                {/* Footer section */}
+                <Footer />
               </div>
             </div>
           </div>
-
-          {/* Footer section */}
-          {/* <Footer /> */}
         </div>
       </Router>
     </HelmetProvider>

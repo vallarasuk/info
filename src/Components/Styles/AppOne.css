@@ -1,0 +1,55 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+    /* Your existing styles for footer */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* In your Styles/Footer.css (or equivalent) */
+
+.footer {
+    background-color: #333;
+    /* Add the desired background color */
+    color: white;
+    /* Set the text color */
+    padding: 20px 0;
+    /* Add some padding for spacing */
+
+    /* Position the footer at the bottom */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    /* Center the text content */
+    text-align: center;
+
+    /* Add a subtle shadow */
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the footer links */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Style the social icons */
+.social-icons a {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+}

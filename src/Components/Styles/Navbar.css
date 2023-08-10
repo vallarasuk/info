@@ -1,6 +1,6 @@
-/* For Light Mode */
+/* Custom Navbar Styles */
 .custom-navbar {
-  background-color: var(--primary-color);
+  background-color: #333;
   padding: 0 10px;
   position: fixed;
   top: 0;
@@ -8,17 +8,36 @@
   width: 100%;
   z-index: 999;
   color: var(--accent-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .custom-navbar .nav-link {
   color: var(--accent-color);
   padding: 10px 15px;
   text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
 }
 
-.custom-navbar .nav-link:hover {
-  background-color: var(--secondary-color);
-  border-radius: 5px;
+.custom-navbar .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: left 0.3s ease;
+}
+
+.custom-navbar .nav-link.active {
+  color: aqua;
+}
+
+.custom-navbar .nav-link:hover::before,
+.custom-navbar .nav-link.active::before {
+  left: 0;
 }
 
 /* Hamburger icon styles */
