@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
 import "../Styles/Navbar.css";
-import HomePageData from "../Constant/HomeContent";
+// import HomePageData from "../Constant/HomeContent";
 
 const CustomNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);

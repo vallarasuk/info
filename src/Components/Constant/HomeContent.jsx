@@ -63,6 +63,43 @@ const HomePageData = {
     { name: "Git", icon: faGit },
     { name: "Responsive Web Design", icon: faMobileAlt },
   ],
+  projectsData: [
+    {
+      title: "Otto Clone",
+      description: "Description for Project 1",
+      gitLink: "https://github.com/vallarasuk/otto-landing-page",
+      livePreview: "https://vallarasuk.github.io/otto-landing-page/",
+      previewImage: require("../Assects/otto landing.png"),
+    },
+    {
+      title: "Macro Touch Clone",
+      description: "Description for Project 2",
+      gitLink: "https://github.com/vallarasuk/Macro-Touch",
+      livePreview: "https://vallarasuk.github.io/Macro-Touch/",
+      previewImage: require("../Assects/macroTouch.png"),
+    },
+    {
+      title: "About Internet Blog",
+      description: "Description for Project 3",
+      gitLink: "https://github.com/vallarasuk/Front-End-Blog",
+      livePreview: "https://vallarasuk.github.io/Front-End-Blog/",
+      previewImage: require("../Assects/about internet blog.png"),
+    },
+    {
+      title: "Portfolio",
+      description: "Description for Project 4",
+      // gitLink: "https://vallarasuk.github.io/otto-landing-page/",
+      livePreview: "https://vallarasuk.w3spaces.com/",
+      previewImage: require("../Assects/portfolio 2.png"),
+    },
+    {
+      title: "Vote Validate Check",
+      description: "Description for Project 5",
+      gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview: "https://vallarasuk.github.io/Vote-Check/",
+      previewImage: require("../Assects/vote eligible check.png"),
+    },
+  ],
 };
 
 export default HomePageData;

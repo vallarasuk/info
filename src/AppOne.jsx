@@ -5,7 +5,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./Components/Navbar/Navbar";
 // import Footer from "./Components/Footer/Footer";
 import "./Components/Styles/AppOne.css";
-import ProfileCard from "./Components/ProfileCard";
+import ProfileCard from "./Components/Lib/ProfileCard";
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));
@@ -38,8 +38,8 @@ const AppOne = () => {
               </div>
 
               {/* Right side - Other content */}
-              <div className="col-lg-8 px-lg-3">
-                <div className="split-screen-container">
+              <div className="col-lg-8 px-lg-3 pt-md-5">
+                <div className="split-screen-container pt-md-4">
                   <Suspense
                     fallback={
                       <div className="loading-container">Loading...</div>

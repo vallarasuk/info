@@ -7,9 +7,9 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"; // Import the new icons
-import HomeContent from "./Constant/HomeContent";
+import HomeContent from "../Constant/HomeContent";
 import { useSpring, animated } from "react-spring";
-import "./ProfileCard.css";
+import "./Styles/ProfileCard.css";
 import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
 
 const ProfileCard = () => {
