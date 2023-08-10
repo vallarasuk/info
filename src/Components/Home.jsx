@@ -46,23 +46,29 @@ const Home = () => {
           <title>{name}</title>
           <meta
             name="description"
-            content="Welcome to my portfolio home page."
+            content="Welcome to the portfolio home page of Vallarasu Kanthasamy, a React Front End Developer."
           />
           {/* Add more relevant meta tags for SEO */}
           <meta
             name="keywords"
-            content="portfolio, web development, projects, React"
+            content="portfolio, web development, projects, React, frontend developer, Vallarasu Kanthasamy"
           />
           <meta name="author" content={`${name} - ${role}`} />
           <meta property="og:title" content={`${name}`} />
-          <meta property="og:description" content={description.join(" ")} />
+          <meta
+            property="og:description"
+            content="Explore my portfolio and skills in web development. Contact me for collaboration or inquiries."
+          />
           <meta property="og:image" content={titleIcon} />
-          <meta property="og:url" content="https://example.com/" />
+          <meta property="og:url" content="https://vallarasuk.com/" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@your-twitter-handle" />
           <meta name="twitter:title" content={`${name} - ${role}`} />
-          <meta name="twitter:description" content={description.join(" ")} />
+          <meta
+            name="twitter:description"
+            content="Explore my portfolio and skills in web development. Contact me for collaboration or inquiries."
+          />
           <meta name="twitter:image" content={titleIcon} />
           <link rel="icon" href={titleIcon} type="image/png" />
           <link
