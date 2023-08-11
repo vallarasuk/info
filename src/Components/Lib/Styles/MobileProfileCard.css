@@ -1,0 +1,27 @@
+/* Profile Card Container */
+.mobile-profile-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    margin-top: 15px;
+}
+
+/* Social Links */
+.social-links-container {
+    margin-top: 20px;
+}
+
+.mobile-profile-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}

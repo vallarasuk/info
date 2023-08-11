@@ -2,11 +2,13 @@ import React, { lazy, Suspense, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useMediaQuery } from "react-responsive";
 import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import "./Components/Styles/App.css";
 import "./Components/Styles/AppOne.css";
 import ProfileCard from "./Components/Lib/ProfileCard";
+import BottomNavbar from "./Components/Navbar/BottomNavbar";
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));
@@ -24,19 +26,21 @@ const AppOne = () => {
     }, 2000); // Adjust the time as needed
   }, []);
 
+  const isSmallScreen = useMediaQuery({ maxWidth: 991 }); // Adjust the max width for small screens
+  const isLargeScreen = useMediaQuery({ minWidth: 992 }); // Adjust the min width for large screens
+
   return (
     <HelmetProvider>
       <Router>
         <div className="appOne-wrapper">
-          {/* Navbar section */}
-          <Navbar />
+          {/* Navbar and BottomNavbar section */}
+          {isLargeScreen && <Navbar />}
+          {isSmallScreen && <BottomNavbar />}
 
           <div className="container-fluid">
             <div className="row">
               {/* Left side - Your profile info card */}
-              <div className="col-lg-4 p-0">
-                <ProfileCard />
-              </div>
+              <div className="col-lg-4">{isLargeScreen && <ProfileCard />}</div>
 
               {/* Right side - Other content */}
               <div className="col-lg-8 px-lg-3 py-md-5">
@@ -80,7 +84,7 @@ const AppOne = () => {
                   </Suspense>
                 </div>
                 {/* Footer section */}
-                <Footer />
+                {/* <Footer /> */}
               </div>
             </div>
           </div>

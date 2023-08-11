@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"; // Import the new icons
+import React, { useEffect, useState } from "react";
+import { animated, useSpring } from "react-spring";
 import HomeContent from "../Constant/HomeContent";
-import { useSpring, animated } from "react-spring";
-import "./Styles/ProfileCard.css";
-import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
+import Resume from "../Helper/Resume";
+import SocialLinks from "../Helper/SocialLinks";
+import "../Lib/Styles/ProjectCard.css";
+import ProfileImage from "../Helper/ProfileImage";
+import ProfileInfo from "../Helper/ProfileInfo";
 
 const ProfileCard = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,15 +13,11 @@ const ProfileCard = () => {
     cardImage,
     name,
     role,
-    // bio,
     linkedInProfileLink,
     githubProfileLink,
-    instagramProfileLink,
-    twitterProfileLink,
     email,
-    mobile,
-    mobileTo,
     emailTo,
+    resumeDownloadLink,
   } = HomeContent;
 
   useEffect(() => {
@@ -54,64 +45,18 @@ const ProfileCard = () => {
       )}
       {!isLoading && (
         <>
-          <img
-            src={cardImage}
-            alt={name}
-            className="profile-image shadow img-fluid"
+          <ProfileImage imageSrc={cardImage} alt={name} />
+
+          <ProfileInfo name={name} role={role} email={email} />
+
+          {/* Use the SocialLinks component */}
+          <SocialLinks
+            linkedInProfileLink={linkedInProfileLink}
+            githubProfileLink={githubProfileLink}
+            emailTo={emailTo}
           />
-          <h2>{name}</h2>
-          <p>{role}</p>
-          {/* <p>{bio}</p> */}
-          <p>{email}</p>
-          <p>{mobile}</p>
-          <div className="social-links-container">
-            <div className="row">
-              <div className="col">
-                <Link
-                  to={linkedInProfileLink}
-                  className="social-link linkedin shadow"
-                >
-                  <FontAwesomeIcon size="xl" icon={faLinkedin} />
-                </Link>
-              </div>
-              <div className="col">
-                <Link
-                  to={githubProfileLink}
-                  className="social-link github shadow"
-                >
-                  <FontAwesomeIcon size="xl" icon={faGithub} />
-                </Link>
-              </div>
-              <div className="col">
-                <Link
-                  to={instagramProfileLink}
-                  className="social-link instagram shadow"
-                >
-                  <FontAwesomeIcon size="xl" icon={faInstagram} />
-                </Link>
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col">
-                <Link
-                  to={twitterProfileLink}
-                  className="social-link twitter shadow"
-                >
-                  <FontAwesomeIcon size="xl" icon={faTwitter} />
-                </Link>
-              </div>
-              <div className="col">
-                <Link to={mobileTo} className="social-link mobile shadow">
-                  <FontAwesomeIcon size="xl" icon={faMobile} />
-                </Link>
-              </div>
-              <div className="col">
-                <Link to={emailTo} className="social-link mail shadow">
-                  <FontAwesomeIcon size="xl" icon={faEnvelope} />
-                </Link>
-              </div>
-            </div>
-          </div>
+          {/* Resume Download */}
+          <Resume resumeDownloadLink={resumeDownloadLink} />
         </>
       )}
     </animated.div>
