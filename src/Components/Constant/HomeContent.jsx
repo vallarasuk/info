@@ -34,6 +34,8 @@ const HomePageData = {
     "https://us.123rf.com/450wm/berkut2011/berkut20111309/berkut2011130900093/21991120-abstract-icon-based-on-the-letter.jpg?ver=6",
   cardImage:
     "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
+  MobileProfileImage:
+    "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
   name: "Vallarasu Kanthasamy",
   role: "React Front End Developer",
   // bio: "Passionate web developer with expertise in React and other web technologies.",

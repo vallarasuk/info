@@ -1,41 +1,23 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Navbar as BootstrapNavbar, Nav, Container } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
+import React, { useState } from "react";
+import { Navbar as BootstrapNavbar, Container, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "../Styles/Navbar.css";
+import { useMediaQuery } from "react-responsive";
 
 const CustomNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const isXlDevice = useMediaQuery({ minWidth: 1200 });
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
-  const slideMenuVariants = {
-    hidden: {
-      left: "-100%",
-    },
-    visible: {
-      left: "0",
-    },
-  };
+  const isXlDevice = useMediaQuery({ minWidth: 1200 });
 
   return (
-    <>
-      {/* Hide the Bootstrap Navbar on mobile devices */}
-      <motion.div
-        initial="hidden"
-        animate={showMenu ? "visible" : "hidden"}
-        variants={slideMenuVariants}
-        className={`slide-menu ${showMenu ? "show" : ""}`}
-      >
-        <NavLinks onCloseMenu={() => setShowMenu(false)} />
-      </motion.div>
-
+    <div>
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -95,47 +77,7 @@ const CustomNavbar = () => {
           </Container>
         </BootstrapNavbar>
       </motion.div>
-    </>
-  );
-};
-
-const NavLinks = ({ onCloseMenu }) => {
-  return (
-    <>
-      <NavLink
-        to="/"
-        className="nav-link mx-2"
-        activeClassName="active"
-        exact
-        onClick={onCloseMenu}
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        className="nav-link mx-2"
-        activeClassName="active"
-        onClick={onCloseMenu}
-      >
-        About
-      </NavLink>
-      <NavLink
-        to="/projects"
-        className="nav-link mx-2"
-        activeClassName="active"
-        onClick={onCloseMenu}
-      >
-        Projects
-      </NavLink>
-      <NavLink
-        to="/contact"
-        className="nav-link mx-2"
-        activeClassName="active"
-        onClick={onCloseMenu}
-      >
-        Contact
-      </NavLink>
-    </>
+    </div>
   );
 };
 
