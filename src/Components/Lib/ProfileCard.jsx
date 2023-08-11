@@ -3,7 +3,7 @@ import { animated, useSpring } from "react-spring";
 import HomeContent from "../Constant/HomeContent";
 import Resume from "../Helper/Resume";
 import SocialLinks from "../Helper/SocialLinks";
-import "../Lib/Styles/ProjectCard.css";
+import "../Lib/Styles/ProfileCard.css";
 import ProfileImage from "../Helper/ProfileImage";
 import ProfileInfo from "../Helper/ProfileInfo";
 

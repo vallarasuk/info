@@ -10,7 +10,6 @@ const ProjectCard = ({
   livePreview,
   previewImage,
 }) => {
-  console.log("img---------------------------->", previewImage);
   return (
     <div className="card project-card">
       {previewImage && (
@@ -22,7 +21,7 @@ const ProjectCard = ({
       )}
       <div className="card-body">
         {title ? (
-          <h5 className="card-title">{title}</h5>
+          <h5 className="card-title text-center fw-bold">{title}</h5>
         ) : (
           <Skeleton width={150} duration={1.5} />
         )}
@@ -31,6 +30,8 @@ const ProjectCard = ({
         ) : (
           <Skeleton count={3} duration={1.5} />
         )}
+      </div>
+      <div className="card-footer d-flex justify-content-between my-3 py-3">
         {gitLink && (
           <a
             href={gitLink}
