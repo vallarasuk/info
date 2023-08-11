@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Vallarasu K's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! This project showcases my skills as a React Front End Developer. It includes details about me, my projects, skills, and contact information. Feel free to explore and get to know more about my work.
 
-## Available Scripts
+## Project Highlights
 
-In the project directory, you can run:
+- **Otto Clone:** A landing page clone showcasing responsive design. [GitHub Repo](https://github.com/vallarasuk/otto-landing-page) | [Live Preview](https://vallarasuk.github.io/otto-landing-page/)
 
-### `npm start`
+- **Macro Touch Clone:** A clone of the Macro Touch website. [GitHub Repo](https://github.com/vallarasuk/Macro-Touch) | [Live Preview](https://vallarasuk.github.io/Macro-Touch/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **About Internet Blog:** A blog about internet technologies and trends. [GitHub Repo](https://github.com/vallarasuk/Front-End-Blog) | [Live Preview](https://vallarasuk.github.io/Front-End-Blog/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Portfolio:** This portfolio website itself. [Live Preview](https://vallarasuk.w3spaces.com/)
 
-### `npm test`
+- **Vote Validate Check:** A web app to check voter eligibility. [GitHub Repo](https://github.com/vallarasuk/Vote-Check) | [Live Preview](https://vallarasuk.github.io/Vote-Check/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To view the portfolio locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository to your local machine.
+2. Install dependencies by running `npm install`.
+3. Start the development server with `npm start`.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Email:** vallarasuk143@gmail.com
+- **LinkedIn:** [vallarasu-k](https://www.linkedin.com/in/vallarasu-k/)
+- **GitHub:** [vallarasuk](https://github.com/vallarasuk)
+- **Twitter:** [@vallarasuk143](https://twitter.com/vallarasuk143)
+- **Instagram:** [vallarasu_kanthasamy](https://www.instagram.com/vallarasu_kanthasamy/?hl=en)
+- **Mobile:** 8122992143
 
-### `npm run eject`
+## Technologies and Skills
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I'm proficient in the following technologies and skills:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- JavaScript
+- HTML
+- CSS
+- Bootstrap
+- Git
+- Responsive Web Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Acknowledgments
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This portfolio was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Special thanks to the React community for providing excellent tools and resources.
