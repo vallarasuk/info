@@ -1,45 +1,46 @@
-import React, { useState, useEffect } from "react";
-import ProjectCard from "./Lib/ProjectCard"; // Import the new component
-import Skeleton from "react-loading-skeleton";
-import HomePageData from "./Constant/HomeContent"; // Import the HomePageData object
+import React from "react";
+import ProjectCard from "./Lib/ProjectCard";
+import HomePageData from "./Constant/HomeContent";
+import Title from "./Helper/Title";
+import { motion } from "framer-motion";
 
 const Projects = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const { projectsData } = HomePageData; // Extract projectsData from HomePageData
+  const { projectsData } = HomePageData;
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // Adjust the time as needed
-  }, []);
+  // Animation variants for the project cards
+  const projectCardVariants = {
+    initial: { opacity: 0, scale: 0.8, y: 50 },
+    animate: { opacity: 1, scale: 1, y: 0 },
+    exit: { opacity: 0, scale: 0.8, y: -50 },
+  };
 
   return (
     <section id="projects">
-      <h2>Projects</h2>
-      <div className="row">
-        {isLoading
-          ? projectsData.map((project, index) => (
-              <div className="col-md-4" key={index}>
-                <div className="card project-card">
-                  <div className="card-body">
-                    <Skeleton height={40} count={1} />
-                    <Skeleton count={3} />
-                  </div>
-                </div>
-              </div>
-            ))
-          : projectsData.map((data, index) => (
-              <div className="col-md-4" key={index}>
-                <ProjectCard
-                  title={data.title}
-                  description={data.description}
-                  gitLink={data.gitLink}
-                  livePreview={data.livePreview}
-                  previewImage={data.previewImage}
-                />
-              </div>
-            ))}
-      </div>
+      <Title text="Projects" />
+      <motion.div
+        className="row"
+        variants={{
+          animate: { transition: { staggerChildren: 0.2 } },
+        }}
+        initial="initial"
+        animate="animate"
+      >
+        {projectsData.map((data, index) => (
+          <motion.div
+            className="col-md-6"
+            key={index}
+            variants={projectCardVariants}
+          >
+            <ProjectCard
+              title={data.title}
+              description={data.description}
+              gitLink={data.gitLink}
+              livePreview={data.livePreview}
+              previewImage={data.previewImage}
+            />
+          </motion.div>
+        ))}
+      </motion.div>
     </section>
   );
 };
