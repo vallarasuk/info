@@ -17,6 +17,8 @@ const MobileProfileCard = () => {
     emailTo,
     MobileProfileImage,
     resumeDownloadLink,
+    title,
+    description,
   } = HomeContent;
 
   // Define the animation effect for the profile card
@@ -29,28 +31,37 @@ const MobileProfileCard = () => {
   });
 
   return (
-    <animated.div
-      className="mobile-profile-card-container"
-      style={cardAnimation}
-    >
-      <div className="mobile-profile-card">
-        {/* Use the ProfileImage component */}
-        <ProfileImage imageSrc={MobileProfileImage} alt={name} />
+    <>
+      <animated.div
+        className="mobile-profile-card-container d-flex justify-content-center align-items-center mb-5"
+        style={cardAnimation}
+      >
+        <div className="text-center">
+          {/* Use the ProfileImage component */}
+          <ProfileImage imageSrc={MobileProfileImage} alt={name} />
 
-        {/* Use the ProfileInfo component */}
-        <ProfileInfo name={name} role={role} email={email} />
+          {/* Use the ProfileInfo component */}
+          <ProfileInfo name={name} role={role} email={email} />
 
-        {/* Use the SocialLinks component */}
-        <SocialLinks
-          linkedInProfileLink={linkedInProfileLink}
-          githubProfileLink={githubProfileLink}
-          emailTo={emailTo}
-        />
-
-        {/* Use the Resume component */}
-        <Resume resumeDownloadLink={resumeDownloadLink} />
-      </div>
-    </animated.div>
+          {/* Use the SocialLinks component */}
+          <SocialLinks
+            linkedInProfileLink={linkedInProfileLink}
+            githubProfileLink={githubProfileLink}
+            emailTo={emailTo}
+          />
+          {/* Use the Resume component */}
+          <Resume resumeDownloadLink={resumeDownloadLink} />
+        </div>
+      </animated.div>
+      <animated.div>
+        <div className="mobile-content-section">
+          <h2>{title}</h2>
+          {description.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
+      </animated.div>
+    </>
   );
 };
 
