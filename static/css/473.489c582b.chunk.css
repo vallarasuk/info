@@ -1,0 +1,2 @@
+.home-section{align-items:center;display:flex;min-height:70vh}@media (max-width:768px){.home-section{min-height:75vh}}.profile-image{border-radius:50%;height:150px;margin:30px auto 10px;object-fit:cover;width:150px}@media screen and (max-width:991px){.profile-image{border-radius:50%;height:180px;margin:50px auto 10px;object-fit:cover;width:180px}}.mobile-profile-card-container{height:70vh}
+/*# sourceMappingURL=473.489c582b.chunk.css.map*/
