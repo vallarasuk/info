@@ -8,26 +8,22 @@ const Title = ({ text }) => {
     // Simulate a delay for the loading animation
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 100);
 
     return () => clearTimeout(loadingTimer);
   }, []);
 
-  // Animation variants for the title motion
-  const titleVariantsBounce = {
-    initial: { opacity: 0, y: -50 },
-    animate: { opacity: 1, y: 0, transition: { type: "spring", bounce: 0.5 } },
-    exit: { opacity: 0, y: 50 },
+  const titleVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
-  
 
   return (
     <motion.h2
-      className="motion-title" // Add any styles you want to apply to the title here
-      variants={titleVariantsBounce}
-      initial="initial"
-      animate="animate"
-      exit="exit"
+      className="motion-title my-4" // Add any styles you want to apply to the title here
+      variants={titleVariants}
+      initial="hidden"
+      animate={isLoading ? "hidden" : "visible"}
     >
       {isLoading ? " " : text}
     </motion.h2>
