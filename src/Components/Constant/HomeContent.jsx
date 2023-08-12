@@ -34,8 +34,7 @@ const HomePageData = {
     "https://us.123rf.com/450wm/berkut2011/berkut20111309/berkut2011130900093/21991120-abstract-icon-based-on-the-letter.jpg?ver=6",
   cardImage:
     "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
-  MobileProfileImage:
-    "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
+  MobileProfileImage: require("../Assects/Profile.jpg"),
   name: "Vallarasu Kanthasamy",
   role: "React Front End Developer",
   // bio: "Passionate web developer with expertise in React and other web technologies.",
@@ -49,12 +48,16 @@ const HomePageData = {
   githubProfileLink: "https://github.com/vallarasuk",
   title: "Welcome to Your Portfolio",
   description: [
-    "Hello, I'm Vallarasu K, a passionate web developer with expertise in React and other web technologies. This is my portfolio website where I showcase my projects and skills. Take a look around and get to know more about me and my work.",
-    "Feel free to explore the projects I've worked on and don't hesitate to reach out if you'd like to discuss any collaboration or have any questions. Thank you for visiting!",
+    "Greetings! I'm Vallarasu K, a passionate React Front End Developer with a knack for creating captivating web experiences using cutting-edge technology.",
+    "My portfolio is a showcase of my commitment to crafting user-friendly interfaces and interactive web applications. With expertise in React and modern web development practices, including HTML5, CSS3, and Bootstrap, I transform concepts into sleek, functional, and visually stunning solutions.",
+    "You'll discover a diverse array of projects that highlight my talent in delivering seamless user interactions and eye-catching designs. Whether it's a sleek landing page, a dynamic web application, or a mobile-responsive site, I approach each project with enthusiasm, meticulous attention to detail, and a drive to exceed expectations.",
+    "I thrive on pushing the boundaries of web development. My goal is to create digital experiences that make a lasting impact. By understanding the unique goals of each project, I deliver solutions that captivate users and drive results beyond mere code.",
+    "Feel free to explore my projects to witness the work I'm passionate about. If you're interested in collaborating on a project or have any questions, don't hesitate to reach out. Your visit is valued, and I'm excited about the potential to work together!",
   ],
+
   imageURL: "https://example.com/your-image.jpg",
-  ctaButtonText: "View Projects",
-  ctaButtonLink: "/projects",
+  projectButtonName: "View Projects",
+  projectButtonlink: "/projects",
   skillsTitle: "Skills and Expertise:",
   skills: [
     { name: "React", icon: faReact },

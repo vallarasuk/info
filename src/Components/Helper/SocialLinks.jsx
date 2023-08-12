@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const SocialLinks = ({ linkedInProfileLink, githubProfileLink, emailTo }) => {
   return (
-    <div className="social-links-container">
+    <div className="mt-4">
       <div className="row">
         <div className="col">
           <Link to={linkedInProfileLink} className="social-link linkedin">
