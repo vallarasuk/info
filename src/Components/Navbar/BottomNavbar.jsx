@@ -28,6 +28,8 @@ const BottomNavbar = () => {
     }
   };
 
+
+//version updated
   return (
     <nav className="navbar fixed-bottom navbar-light bg-light bottom-navbar">
       {Object.keys(sections).map((path) => (
