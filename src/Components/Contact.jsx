@@ -25,6 +25,24 @@ const ContactForm = () => {
     setRecaptchaToken(token);
   };
 
+  const sendAutoReply = async (recipientEmail, recipientName) => {
+    const autoReplyTemplateParams = {
+      recipientName: recipientName,
+      recipientEmail: recipientEmail,
+    };
+
+    try {
+      await emailjs.send(
+        "service_85to4es",
+        "template_8nsbhdm",
+        autoReplyTemplateParams,
+        "NZQFyq83U0oJ3qnQR"
+      );
+    } catch (error) {
+      console.error("Error sending auto-reply: ", error);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!recaptchaToken) {
@@ -36,12 +54,21 @@ const ContactForm = () => {
       const response = await emailjs.send(
         "service_85to4es",
         "template_8nsbhdm",
-        formData,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
         "NZQFyq83U0oJ3qnQR"
       );
 
       if (response.status === 200) {
         setMessage("Email sent successfully!");
+
+        // Send auto-reply
+        await sendAutoReply(formData.email, formData.name);
+
         setFormData({
           name: "",
           email: "",
@@ -111,7 +138,8 @@ const ContactForm = () => {
         </Form.Group>
         <Form.Group controlId="recaptcha" className="mb-3">
           <ReCAPTCHA
-            sitekey="6LeeeKMnAAAAAOy2r-gBpMJNUVdL6Kw5IRL2Iz_W"
+            sitekey="6LeeeKMnAAAAAOy2r-gBpMJNUVdL6Kw5IRL2Iz_W
+            " // Replace with your ReCAPTCHA sitekey
             onChange={handleRecaptchaChange}
           />
           {!recaptchaToken && (
@@ -122,6 +150,56 @@ const ContactForm = () => {
           Send Email
         </Button>
       </Form>
+
+      {/* Auto-Reply Template */}
+      {message === "Email sent successfully!" && (
+        <div
+          style={{
+            fontFamily: "Arial, sans-serif",
+            textAlign: "center",
+            maxWidth: "600px",
+            margin: "20px auto",
+            padding: "20px",
+            border: "1px solid #ddd",
+            borderRadius: "5px",
+            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+            backgroundColor: "#f7f7f7",
+          }}
+        >
+          <h2 style={{ color: "#4285F4", marginBottom: "20px" }}>
+            Thank you for reaching out!
+          </h2>
+          <p style={{ fontSize: "16px", color: "#333" }}>
+            Hi <strong>{formData.name}</strong>,
+            <br />
+            <br />
+            We've received your message and will get back to you as soon as
+            possible. We appreciate your interest and look forward to assisting
+            you with your inquiry.
+            <br />
+            <br />
+            If you have any urgent matters, please feel free to contact us at
+            <a
+              href="mailto:contact@vallarasuk.com" // Replace with your email address
+              style={{ color: "#4285F4", textDecoration: "none" }}
+            >
+              contact@vallarasuk.com
+            </a>
+            .
+          </p>
+          <div style={{ marginTop: "30px" }}>
+            <p style={{ fontSize: "14px", color: "#888" }}>
+              Vallarasuk | Address, Bangalore, India |
+              <a
+                href="https://vallarasuk.com" // Replace with your website URL
+                style={{ color: "#4285F4", textDecoration: "none" }}
+              >
+                www.vallarasuk.com
+              </a>
+            </p>
+          </div>
+        </div>
+      )}
     </Container>
   );
 };
