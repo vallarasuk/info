@@ -35,6 +35,8 @@ const HomePageData = {
   cardImage:
     "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
   MobileProfileImage: require("../Assects/Profile.jpg"),
+  resumeDownloadLink:require("../Assects/VALLARASU K.png"),
+  resumeFileName:"Vallarasu K",
   name: "Vallarasu Kanthasamy",
   role: "React Front End Developer",
   // bio: "Passionate web developer with expertise in React and other web technologies.",
@@ -105,6 +107,30 @@ const HomePageData = {
       previewImage: require("../Assects/vote eligible check.png"),
     },
   ],
+  studies: [
+    {
+      year: "2017 - 2020",
+      title: "Diploma Mechanical Engineering",
+      institution: "Goverment Polytechnic college",
+      description:
+        "Studied advanced front-end development techniques and web design principles.",
+      icon: "graduation", // Use 'graduation' icon for this entry
+    },
+    {
+      year: "2018 - 2020",
+      title: "Bachelor's Degree in Computer Science",
+      institution: "Tech University",
+      description:
+        "Completed coursework in computer science, algorithms, data structures, and software engineering.",
+      icon: "graduation", // Use 'graduation' icon for this entry
+    },
+  ],
+  aboutDescription:
+    "I completed my SSLC with 87% from the National Matriculation School and later pursued a Diploma in Mechanical Engineering. I have a year of focused learning in front-end development.  Currently, I am thriving in the role of a React Developer at  Thidiff Technology, located in Bangalore. I'm passionate  about creating efficient and user-friendly web applications that make a meaningful impact.",
+    aboutTitle:
+    "Hi, I'm Vallarasu K, a passionate React developer with a strong focus on creating exceptional web experiences. I'm dedicated to delivering high-quality front-end solutions that combine technical expertise with creativity. With a background in computer science and years of hands-on experience, I bring a unique perspective to every project I work on.",
 };
+
+
 
 export default HomePageData;

@@ -85,7 +85,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container className="mt-5">
+    <Container className="my-4">
       <h2 className="text-center">Contact Us</h2>
       {message && <Alert variant="info">{message}</Alert>}
       <Form onSubmit={handleSubmit}>

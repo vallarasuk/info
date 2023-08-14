@@ -17,9 +17,11 @@ const MobileProfileCard = () => {
     emailTo,
     MobileProfileImage,
     resumeDownloadLink,
+    resumeFileName,
     title,
     description,
   } = HomeContent;
+
 
   // Define the animation effect for the profile card
   const cardAnimation = useSpring({
@@ -50,11 +52,11 @@ const MobileProfileCard = () => {
             emailTo={emailTo}
           />
           {/* Use the Resume component */}
-          <Resume resumeDownloadLink={resumeDownloadLink} />
+          <Resume resumeDownloadLink={resumeDownloadLink} resumeFileName={resumeFileName} />
         </div>
       </animated.div>
       <animated.div>
-        <div className="mobile-content-section">
+        <div className="mobile-content-section my-4">
           <h2>{title}</h2>
           {description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
