@@ -2,11 +2,27 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
-const Resume = ({ resumeDownloadLink }) => {
+const Resume = ({ resumeDownloadLink, resumeFileName }) => {
   const handleResumeDownload = () => {
-    // Replace with the actual download link
-    window.open(resumeDownloadLink, "_blank");
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString().split("T")[0]; // Format: YYYY-MM-DD
+  
+    // Create an anchor element
+    const link = document.createElement("a");
+    link.href = resumeDownloadLink;
+    link.target = "_blank"; // Open in a new tab/window
+    link.download = `${resumeFileName}_${formattedDate}.png`; // Include resumeFileName and today's date in the file name
+  
+    // Add the anchor element to the DOM
+    document.body.appendChild(link);
+  
+    // Dispatch a click event on the anchor
+    link.dispatchEvent(new MouseEvent("click"));
+  
+    // Clean up: Remove the anchor element from the DOM after the click event is dispatched
+    document.body.removeChild(link);
   };
+  
 
   return (
     <div className="row mt-3">

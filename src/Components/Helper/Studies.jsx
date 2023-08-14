@@ -24,7 +24,7 @@ const StudyItem = ({ study, index }) => {
 
     return (
         <div ref={ref} className={timelineClasses}>
-            <div className="timeline-icon">
+            <div className="timeline-icon mx-4">
                 {study.icon === "graduation" && <FontAwesomeIcon icon={faGraduationCap} />}
                 {study.icon === "coding" && <FontAwesomeIcon icon={faLaptopCode} />}
                 {study.icon === "certificate" && <FontAwesomeIcon icon={faCertificate} />}

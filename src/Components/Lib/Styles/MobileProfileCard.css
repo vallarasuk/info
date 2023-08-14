@@ -22,3 +22,9 @@
 .mobile-profile-card-container {
   height: 70vh;
 }
+
+@media (min-width: 480px) and (max-width: 991px) {
+  .mobile-profile-card-container {
+    height: 80vh;
+  }
+}

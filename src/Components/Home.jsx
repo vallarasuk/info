@@ -10,7 +10,7 @@ import SeoMetaTags from "./Constant/SeoMetaTags";
 const Home = () => {
   const {
     projectButtonName,
-    projectButtonLink,
+    projectButtonlink,
     name,
     role,
     titleIcon,
@@ -39,14 +39,14 @@ const Home = () => {
                 <MobileProfileCard />
               </div>
             ) : (
-              <div className="col-12 text-center">
+              <div className="col-12 col-sm-10 offset-sm-1 text-secondary-emphasis my-4">
                 <animated.div style={textAnimation}>
-                  <h2>{title}</h2>
+                  <h2 className="mb-4">{title}</h2>
                   {description.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                   ))}
                   <div className="profile">
-                    <Link to={projectButtonLink} className="btn btn-primary">
+                    <Link to={projectButtonlink} className="btn btn-primary">
                       {projectButtonName}
                     </Link>
                   </div>

@@ -15,7 +15,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects">
+    <section id="projects my-4">
       <Title text="Projects" />
       <motion.div
         className="row"
