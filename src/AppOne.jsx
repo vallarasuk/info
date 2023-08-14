@@ -9,6 +9,7 @@ import "./Components/Styles/App.css";
 import "./Components/Styles/AppOne.css";
 import ProfileCard from "./Components/Lib/ProfileCard";
 import BottomNavbar from "./Components/Navbar/BottomNavbar";
+import NotFound from "./Components/Helper/NotFound";
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));
@@ -79,6 +80,8 @@ const AppOne = () => {
                         <Route path="/about" element={<About />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
+                        {/* Add the 404 page */}
+                        <Route path="*" element={<NotFound />} />
                       </Routes>
                     )}
                   </Suspense>
