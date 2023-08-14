@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Form,
+  Button,
+  Alert,
+  Modal,
+} from "react-bootstrap";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
@@ -12,6 +20,7 @@ const ContactForm = () => {
   });
   const [message, setMessage] = useState("");
   const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -152,7 +161,7 @@ const ContactForm = () => {
       </Form>
 
       {/* Auto-Reply Template */}
-      {message === "Email sent successfully!" && (
+      {/* {message === "Email sent successfully!" && (
         <div
           style={{
             fontFamily: "Arial, sans-serif",
@@ -199,7 +208,28 @@ const ContactForm = () => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
+
+      {/* Success Modal */}
+      <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Thank You!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+            Hi <strong>{formData.name}</strong>,
+            <br />
+            <br />
+            We've received your message and will get back to you as soon as
+            possible. We appreciate your interest and look forward to assisting
+            you with your inquiry.
+            <br />
+            <br />
+            If you have any urgent matters, please feel free to contact us at
+            <a href="mailto:contact@vallarasuk.com">contact@vallarasuk.com</a>.
+          </p>
+        </Modal.Body>
+      </Modal>
     </Container>
   );
 };
