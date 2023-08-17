@@ -35,8 +35,8 @@ const HomePageData = {
   cardImage:
     "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
   MobileProfileImage: require("../Assects/Profile.jpg"),
-  resumeDownloadLink:require("../Assects/VALLARASU K.png"),
-  resumeFileName:"Vallarasu K",
+  resumeDownloadLink: require("../Assects/VALLARASU K.png"),
+  resumeFileName: "Vallarasu K",
   name: "Vallarasu Kanthasamy",
   role: "React Front End Developer",
   // bio: "Passionate web developer with expertise in React and other web technologies.",
@@ -49,14 +49,13 @@ const HomePageData = {
   linkedInProfileLink: "https://www.linkedin.com/in/vallarasu-k/",
   githubProfileLink: "https://github.com/vallarasuk",
   title: "Welcome to Your Portfolio",
-  description: [
-    "Greetings! I'm Vallarasu K, a passionate React Front End Developer with a knack for creating captivating web experiences using cutting-edge technology.",
-    "My portfolio is a showcase of my commitment to crafting user-friendly interfaces and interactive web applications. With expertise in React and modern web development practices, including HTML5, CSS3, and Bootstrap, I transform concepts into sleek, functional, and visually stunning solutions.",
-    "You'll discover a diverse array of projects that highlight my talent in delivering seamless user interactions and eye-catching designs. Whether it's a sleek landing page, a dynamic web application, or a mobile-responsive site, I approach each project with enthusiasm, meticulous attention to detail, and a drive to exceed expectations.",
-    "I thrive on pushing the boundaries of web development. My goal is to create digital experiences that make a lasting impact. By understanding the unique goals of each project, I deliver solutions that captivate users and drive results beyond mere code.",
-    "Feel free to explore my projects to witness the work I'm passionate about. If you're interested in collaborating on a project or have any questions, don't hesitate to reach out. Your visit is valued, and I'm excited about the potential to work together!",
+  portfolioDescription: [
+    "Hello! I'm Vallarasu K, a dedicated Front End Developer with a passion for crafting captivating web experiences using cutting-edge technologies.",
+    "My portfolio is a living testament to my commitment to creating user-centric interfaces and interactive web applications. With a strong command of React and modern web development tools like HTML5, CSS3, and Bootstrap, I transform ideas into sleek, functional, and visually stunning solutions.",
+    "Here, you'll discover a diverse collection of projects that shine a spotlight on my talent in delivering seamless user interactions and eye-catching designs. From elegant landing pages to dynamic web applications and mobile-responsive sites, each project reflects my enthusiasm, meticulous attention to detail, and determination to exceed expectations.",
+    "I thrive on pushing the boundaries of web development. My mission is to craft digital experiences that leave a lasting impression. By immersing myself in the unique goals of each project, I produce solutions that captivate users and achieve results that transcend lines of code.",
+    "Feel free to delve into my projects and witness the work that fuels my passion. If you're keen on collaborating or have questions, please don't hesitate to reach out. Your visit is genuinely appreciated, and I'm excited about the potential to create something remarkable together!",
   ],
-
   imageURL: "https://example.com/your-image.jpg",
   projectButtonName: "View Projects",
   projectButtonlink: "/projects",
@@ -110,25 +109,26 @@ const HomePageData = {
   studies: [
     {
       year: "2017 - 2020",
-      title: "Diploma Mechanical Engineering",
-      institution: "Goverment Polytechnic college",
+      title: "Diploma in Mechanical Engineering",
+      institution: "Government Polytechnic College",
       description:
-        "Studied advanced front-end development techniques and web design principles.",
+        "During my time at Government Polytechnic College, I embarked on an exciting journey in the world of mechanical engineering. From studying advanced concepts to mastering design principles and manufacturing techniques, I honed the skills needed to innovate and create in this dynamic field.",
       icon: "graduation", // Use 'graduation' icon for this entry
     },
     {
-      year: "2018 - 2020",
-      title: "Bachelor's Degree in Computer Science",
-      institution: "Tech University",
+      year: "2016 - 2017",
+      title: "Secondary School Leaving Certificate (SSLC)",
+      institution: "National Matriculation School",
       description:
-        "Completed coursework in computer science, algorithms, data structures, and software engineering.",
-      icon: "graduation", // Use 'graduation' icon for this entry
+        "My academic foundation was laid at National Matriculation School, where I immersed myself in a diverse range of subjects. With a focus on computer science and mathematics, I gained a solid understanding of essential concepts that continue to shape my problem-solving abilities today.",
+      icon: "school", // Use 'school' icon for this entry
     },
   ],
+  aboutTitle:
+    "Hello, I'm Vallarasu K, a dedicated React developer driven by the art of crafting exceptional web experiences. My passion lies in blending technical expertise with creativity to deliver high-quality front-end solutions.",
+
   aboutDescription:
-    "I completed my SSLC with 87% from the National Matriculation School and later pursued a Diploma in Mechanical Engineering. I have a year of focused learning in front-end development.  Currently, I am thriving in the role of a React Developer at  Thidiff Technology, located in Bangalore. I'm passionate  about creating efficient and user-friendly web applications that make a meaningful impact.",
-    aboutTitle:
-    "Hi, I'm Vallarasu K, a passionate React developer with a strong focus on creating exceptional web experiences. I'm dedicated to delivering high-quality front-end solutions that combine technical expertise with creativity. With a background in computer science and years of hands-on experience, I bring a unique perspective to every project I work on.",
+    "My journey began with a standout achievement, securing 87% in my SSLC from the National Matriculation School. Building upon this foundation, I pursued a Diploma in Mechanical Engineering, channeling my curiosity towards front-end development. Now, with years of hands-on experience, I thrive as a React Developer at Thidiff Technology in Bangalore.",
 };
 
 
