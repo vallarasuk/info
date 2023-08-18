@@ -49,7 +49,7 @@ const HomePageData = {
   linkedInProfileLink: "https://www.linkedin.com/in/vallarasu-k/",
   githubProfileLink: "https://github.com/vallarasuk",
   title: "Welcome to Your Portfolio",
-  portfolioDescription: [
+  description: [
     "Hello! I'm Vallarasu K, a dedicated Front End Developer with a passion for crafting captivating web experiences using cutting-edge technologies.",
     "My portfolio is a living testament to my commitment to creating user-centric interfaces and interactive web applications. With a strong command of React and modern web development tools like HTML5, CSS3, and Bootstrap, I transform ideas into sleek, functional, and visually stunning solutions.",
     "Here, you'll discover a diverse collection of projects that shine a spotlight on my talent in delivering seamless user interactions and eye-catching designs. From elegant landing pages to dynamic web applications and mobile-responsive sites, each project reflects my enthusiasm, meticulous attention to detail, and determination to exceed expectations.",
