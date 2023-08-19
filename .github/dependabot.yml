@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # Adjust this based on your project's ecosystem (npm, composer, pip, etc.)
+    directory: "/" # Replace with the actual path to your package manifests
+    schedule:
+      interval: "daily" # You can adjust the frequency (daily, weekly, monthly, etc.) as needed
+    open-pull-requests-limit: 15 # Limit the number of open pull requests for updates
+    target-branch: "main" # Specify your main branch name here
+    automerge: true # Enable automatic merging of updates if tests pass
+    labels:
+      - "dependencies" # Add labels to Dependabot-created pull requests for better organization
