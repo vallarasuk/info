@@ -23,13 +23,13 @@ const ProfileInfo = ({ name, role, email }) => {
 
   return (
     <div className="profile-info">
-      <animated.h2 className="mt-3" style={bottomAnimation}>
+      <animated.h2 className="mt-3 my-name" style={bottomAnimation}>
         {name}
       </animated.h2>
-      <animated.p className="mt-3 fw-semibold" style={bottomAnimation}>
+      <animated.p className="mt-3 fw-semibold my-role" style={bottomAnimation}>
         {role}
       </animated.p>
-      <animated.p className="email-text" style={bottomAnimation}>
+      <animated.p className="email-text " style={bottomAnimation}>
         <a href={`mailto:${email}`} className="text-decoration-none text-black-50">
           {email}
         </a>

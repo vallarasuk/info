@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faLaptopCode, faCertificate } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap, faCertificate, faSchool } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 import "../Styles/TimeLine.css"; // Include Bootstrap styles
 
@@ -24,14 +24,14 @@ const StudyItem = ({ study, index }) => {
 
     return (
         <div ref={ref} className={timelineClasses}>
-            <div className="timeline-icon mx-4">
+            <div className="timeline-icon mx-4 my-3">
                 {study.icon === "graduation" && <FontAwesomeIcon icon={faGraduationCap} />}
-                {study.icon === "coding" && <FontAwesomeIcon icon={faLaptopCode} />}
+                {study.icon === "school" && <FontAwesomeIcon icon={faSchool} />}
                 {study.icon === "certificate" && <FontAwesomeIcon icon={faCertificate} />}
             </div>
             <div className="timeline-content">
-                <h3 className="timeline-title">{study.title}</h3>
-                <h4 className="timeline-institution">{study.institution}</h4>
+                <h3 className="timeline-title my-2">{study.title}</h3>
+                <h4 className="timeline-institution my-3 fw-bold">{study.institution}</h4>
                 <p className="timeline-description">{study.description}</p>
             </div>
         </div>

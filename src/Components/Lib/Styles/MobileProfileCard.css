@@ -28,3 +28,21 @@
     height: 80vh;
   }
 }
+
+.my-name {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 2px;
+}
+
+.social-link:hover {
+  transform: scale(1.2) rotate(15deg);
+  transition: transform 0.5s ease;
+}
+
+.hover-animation {
+  transition: transform 0.2s ease;
+}
+
+.hover-animation:hover {
+  transform: translateY(-3px);
+}
