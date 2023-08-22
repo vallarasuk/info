@@ -42,7 +42,6 @@
     transition: color 0.3s;
   }
   
-  /* Additional styles for responsiveness */
   @media (max-width: 767px) {
     .project-card {
       margin: 10px auto;

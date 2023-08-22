@@ -25,6 +25,19 @@ const Home = () => {
     config: { duration: 1000 },
   });
 
+  const titleAnimation = useSpring({
+    opacity: 1,
+    y: 0,
+    from: { opacity: 0, y: -20 },
+    config: { duration: 800 },
+  });
+
+  const buttonAnimation = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 800, delay: 300 },
+  });
+
   const isSmallScreen = useMediaQuery({ maxWidth: 991 });
 
   return (
@@ -32,7 +45,7 @@ const Home = () => {
       <section className="home-section" id="home">
         <SeoMetaTags name={name} role={role} titleIcon={titleIcon} />
 
-        <div className="container-fluid">
+        <div className="container">
           <div className="row align-items-center">
             {isSmallScreen ? (
               <div className="mb-5">
@@ -40,13 +53,17 @@ const Home = () => {
               </div>
             ) : (
               <div className="col-12 col-sm-10 offset-sm-1 text-secondary-emphasis my-4">
-                <animated.div style={textAnimation}>
-                  <h2 className="mb-4">{title}</h2>
+                <animated.h2 className="text-title mb-4" style={titleAnimation}>
+                  {title}
+                </animated.h2>
+                <animated.div style={{ ...textAnimation, ...buttonAnimation }}>
                   {description.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
+                    <p key={index} className="text-description">
+                      {paragraph}
+                    </p>
                   ))}
                   <div className="profile">
-                    <Link to={projectButtonlink} className="btn btn-primary">
+                    <Link to={projectButtonlink} className="btn btn-attractive">
                       {projectButtonName}
                     </Link>
                   </div>
