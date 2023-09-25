@@ -7,7 +7,8 @@ import 'animate.css'; // Import Animate.css styles
 import './Components/Styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import AppOne from './AppOne';
+// import AppOne from './AppOne';
+import AppMain from './AppMain';
 
 
 // Add Font Awesome brand icons to the library
@@ -16,7 +17,8 @@ library.add(fab);
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <AppOne />
+    {/* <AppOne /> */}
+    <AppMain/>
   </React.StrictMode>,
   document.getElementById('root')
 );
