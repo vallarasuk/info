@@ -32,9 +32,10 @@ const HomePageData = {
   iconImage: require("../Assects/Profile.jpg"),
   titleIcon:
     "https://us.123rf.com/450wm/berkut2011/berkut20111309/berkut2011130900093/21991120-abstract-icon-based-on-the-letter.jpg?ver=6",
-  cardImage:
-    "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
-  MobileProfileImage: require("../Assects/Profile.jpg"),
+  // cardImage:
+  //   "https://us.123rf.com/450wm/arbuzu/arbuzu1811/arbuzu181100005/111437501-letter-v-logo-icon-design-template-elements.jpg?ver=6",
+  cardImage: require("../Assects/profileimgtwo.JPG"),
+  MobileProfileImage: require("../Assects/profileimgtwo.JPG"),
   resumeDownloadLink: require("../Assects/VALLARASU K.png"),
   resumeFileName: "Vallarasu K",
   name: "Vallarasu Kanthasamy",
@@ -48,7 +49,7 @@ const HomePageData = {
   twitterProfileLink: "https://twitter.com/vallarasuk143",
   linkedInProfileLink: "https://www.linkedin.com/in/vallarasu-k/",
   githubProfileLink: "https://github.com/vallarasuk",
-  title: "Welcome to Your Portfolio",
+  title: "Dive into My World",
   description: [
     "Hello! I'm Vallarasu K, a dedicated Front End Developer with a passion for crafting captivating web experiences using cutting-edge technologies.",
     "My portfolio is a living testament to my commitment to creating user-centric interfaces and interactive web applications. With a strong command of React and modern web development tools like HTML5, CSS3, and Bootstrap, I transform ideas into sleek, functional, and visually stunning solutions.",
@@ -130,7 +131,5 @@ const HomePageData = {
   aboutDescription:
     "My journey began with a standout achievement, securing 87% in my SSLC from the National Matriculation School. Building upon this foundation, I pursued a Diploma in Mechanical Engineering, channeling my curiosity towards front-end development. Now, with years of hands-on experience, I thrive as a React Developer at Thidiff Technology in Bangalore.",
 };
-
-
 
 export default HomePageData;
