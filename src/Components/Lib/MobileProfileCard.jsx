@@ -35,7 +35,7 @@ const MobileProfileCard = () => {
   return (
     <>
       <animated.div
-        className="mobile-profile-card-container d-flex justify-content-center align-items-center mb-5"
+        className="mobile-profile-card-container d-flex justify-content-center align-items-center mb-5 d-md-none"
         style={cardAnimation}
       >
         <div className="text-center">
