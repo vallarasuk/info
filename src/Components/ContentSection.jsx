@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col } from "react-bootstrap";
 import HomePageData from "./Constant/HomeContent";
 import MobileProfileCard from "./Lib/MobileProfileCard";
+import MyWorks from "./Helper/MyWorks";
 
 const ContentSection = () => {
   const {
@@ -33,7 +34,7 @@ const ContentSection = () => {
   } = HomePageData; // Assuming HomePageData is imported here
 
   return (
-    <Container className="your-component">
+    <Container className="your-component p-0">
       {/* Header Section */}
       {/* <header>
         <Row>
@@ -54,23 +55,29 @@ const ContentSection = () => {
 
       {/* About Section */}
       <section className="about">
-        <h2>About Me</h2>
+        <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">About Me</h2>
         <p>{aboutDescription}</p>
+      </section>
+
+      {/* Work Section */}
+
+      <section className="works">
+        <MyWorks projectsData={projectsData}/>
       </section>
 
       {/* Skills Section */}
       <section className="skills">
-        <h2>{skillsTitle}</h2>
-        <Row>
+       <div className="my-4"> <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">{skillsTitle}</h2>
+        <Row className="gap-5 d-flex justify-content-center">
           {skills.map((skill, index) => (
-            <Col xs={12} md={6} key={index} className="text-center mb-lg-3">
-              <div className="skill my-sm-4 ">
+            <Col xs={12} md={6} lg={3} key={index} className="text-center mb-lg-3 shadow rounded-3">
+              <div className="skill my-sm-3">
                 <FontAwesomeIcon icon={skill.icon} size="2x" />
                 <p className="text-capitalize">{skill.name}</p>
               </div>
             </Col>
           ))}
-        </Row>
+        </Row></div>
       </section>
 
       {/* Projects Section */}
@@ -95,7 +102,7 @@ const ContentSection = () => {
 
       {/* Studies Section */}
       <section className="studies">
-        <h2>Education</h2>
+        <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">Education</h2>
         {studies.map((study, index) => (
           <div className="study" key={index}>
             <h3>{study.title}</h3>

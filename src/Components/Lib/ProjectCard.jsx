@@ -11,7 +11,12 @@ const ProjectCard = ({
   previewImage,
 }) => {
   return (
-    <div className="card project-card">
+    <div div className="shadow p-3 rounded-3">
+       {title ? (
+          <h5 className="card-title text-center fw-bold mt-2 bg-opacity-25 rounded-3 shadow py-3 bg-info">{title}</h5>
+        ) : (
+          <Skeleton width={150} duration={1.5} />
+        )}
       {previewImage && (
         <img
           src={previewImage}
@@ -20,18 +25,14 @@ const ProjectCard = ({
         />
       )}
       <div className="card-body">
-        {title ? (
-          <h5 className="card-title text-center fw-bold">{title}</h5>
-        ) : (
-          <Skeleton width={150} duration={1.5} />
-        )}
+       
         {description ? (
           <p className="card-text">{description}</p>
         ) : (
           <Skeleton count={3} duration={1.5} />
         )}
       </div>
-      <div className="card-footer d-flex justify-content-between my-3 py-3">
+      <div className="card-footer d-flex justify-content-between my-3 py-2">
         {gitLink && (
           <a
             href={gitLink}

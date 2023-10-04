@@ -57,7 +57,7 @@ const MobileProfileCard = () => {
       </animated.div>
       <animated.div>
         <div className="mobile-content-section my-4">
-          <h2>{title}</h2>
+          <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4 ">{title}</h2>
           {description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
