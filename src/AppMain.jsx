@@ -45,7 +45,7 @@ const AppMain = () => {
               <div className="col-lg-4">{isLargeScreen && <ProfileCard />}</div>
 
               {/* Right side - Other content */}
-              <div className="col-lg-8 px-lg-3 py-md-5">
+              <div className="col-lg-8 px-lg-3 py-md-2">
                 <div className="split-screen-container pt-md-4">
                   <Suspense
                     fallback={
@@ -85,7 +85,7 @@ const AppMain = () => {
                       //   <Route path="*" element={<NotFound />} />
                       // </Routes>
 
-                      <ContentSection/>
+                      <ContentSection/> 
                     )}
                   </Suspense>
                 </div>

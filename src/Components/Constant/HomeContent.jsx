@@ -60,7 +60,7 @@ const HomePageData = {
   imageURL: "https://example.com/your-image.jpg",
   projectButtonName: "View Projects",
   projectButtonlink: "/projects",
-  skillsTitle: "Skills and Expertise:",
+  skillsTitle: "Skills and Expertise",
   skills: [
     { name: "React", icon: faReact },
     { name: "JavaScript", icon: faJs },
