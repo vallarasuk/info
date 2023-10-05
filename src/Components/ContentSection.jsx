@@ -70,7 +70,7 @@ const ContentSection = () => {
        <div className="my-4"> <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">{skillsTitle}</h2>
         <Row className="gap-5 d-flex justify-content-center">
           {skills.map((skill, index) => (
-            <Col xs={12} md={6} lg={3} key={index} className="text-center mb-lg-3 shadow rounded-3">
+            <Col xs={12} md={6} lg={3} key={index} className="text-center mb-lg-3 shadow p-3 p-lg-4 rounded-3">
               <div className="skill my-sm-3">
                 <FontAwesomeIcon icon={skill.icon} size="2x" />
                 <p className="text-capitalize">{skill.name}</p>
