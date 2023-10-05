@@ -3,7 +3,7 @@
   "name": "info",
   "version": "2.0.6",
   "private": true,
-  "description": "A web application built with React.js showcasing Vallarasu Kanthasamy portfolio.",
+  "description": "Explore the creative journey of Vallarasu Kanthasamy, a passionate software engineer and React developer, through this engaging React.js web application. Discover a world of innovative web projects, responsive design, and cutting-edge technology solutions in Vallarasu's dynamic portfolio.",
   "keywords": [
     "portfolio",
     "web development",
@@ -17,7 +17,18 @@
     "creative portfolio",
     "technology enthusiast",
     "coding projects",
-    "responsive design"
+    "responsive design",
+    "react developer",
+    "freelancer developer",
+    "developer",
+    "wordpress developer",
+    "gatsby js developer",
+    "javascript developer",
+    "fullstack web developer",
+    "angular developer",
+    "vue developer",
+    "node.js developer",
+    "Responsive devloper"
   ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
