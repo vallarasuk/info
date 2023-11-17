@@ -33,8 +33,8 @@ const SeoMetaTags = ({ name, role, titleIcon }) => {
       <meta name="twitter:image" content={titleIcon} />
       <link rel="icon" href={titleIcon} type="image/png" />
       <link
-        rel="shortcut icon"
-        href="./Assects/Profile.jpg"
+        rel="icon"
+        href="./Assets/Profile.jpg"
         type="image/x-icon"
       />
       {/* Set favicon */}
