@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { animated, useSpring } from "react-spring";
 import { useInView } from "react-intersection-observer";
 
-const ProfileInfo = ({ name, role, email }) => {
+const ProfileInfo = ({ name, email }) => {
+  const roles = [
+    "Software Developer",
+    "Wordpress Plugin Developer",
+    "React Developer",
+  ];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [roles.length]);
+
+  const currentRole = roles[currentRoleIndex];
+
   const animationConfig = {
-    duration: 1000, // Set the duration to 1 second
+    duration: 1000,
     tension: 200,
     friction: 20,
   };
 
-  // Use the useInView hook to detect when the component is in the viewport
   const [bottomRef, bottomInView] = useInView({
-    triggerOnce: true, // Trigger the animation once
-    rootMargin: "-100px", // Add a root margin to start the animation earlier
+    triggerOnce: true,
+    rootMargin: "-100px",
   });
 
   const bottomAnimation = useSpring({
@@ -21,22 +37,35 @@ const ProfileInfo = ({ name, role, email }) => {
     config: animationConfig,
   });
 
+  const roleAnimation = useSpring({
+    opacity: 1,
+    transform: "translateY(0px)",
+    from: { opacity: 0, transform: "translateY(10px)" },
+    reset: true,
+    config: { duration: 500 },
+  });
+
   return (
     <div className="profile-info">
       <animated.h2 className="mt-3 my-name" style={bottomAnimation}>
         {name}
       </animated.h2>
-      <animated.p className="mt-3 fw-semibold my-role" style={bottomAnimation}>
-        {role}
+      <animated.p className="mt-3 fw-semibold my-role" style={roleAnimation}>
+        {currentRole}
       </animated.p>
-      <animated.p className="email-text " style={bottomAnimation}>
-        <a href={`mailto:${email}`} className="text-decoration-none text-black-50">
+      <animated.p className="email-text" style={bottomAnimation}>
+        <a
+          href={`mailto:${email}`}
+          className="text-decoration-none text-black-50"
+        >
           {email}
         </a>
       </animated.p>
-      <animated.div className="extra-info" style={bottomAnimation} ref={bottomRef}>
-        {/* Content that will be animated when it becomes visible */}
-      </animated.div>
+      <animated.div
+        className="extra-info"
+        style={bottomAnimation}
+        ref={bottomRef}
+      ></animated.div>
     </div>
   );
 };

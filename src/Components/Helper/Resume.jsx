@@ -11,7 +11,9 @@ const Resume = ({ resumeDownloadLink, resumeFileName }) => {
     const link = document.createElement("a");
     link.href = resumeDownloadLink;
     link.target = "_blank"; // Open in a new tab/window
-    link.download = `${resumeFileName}_${formattedDate}.png`; // Include resumeFileName and today's date in the file name
+    // link.download = `${resumeFileName}_${formattedDate}.png`;   ---- for PNG view download option
+
+    link.download = `${resumeFileName}_${formattedDate}.pdf`;
 
     // Add the anchor element to the DOM
     document.body.appendChild(link);

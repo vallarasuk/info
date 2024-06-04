@@ -12,12 +12,13 @@ const ProfileCard = () => {
   const {
     cardImage,
     name,
-    role,
+    roles,
     linkedInProfileLink,
     githubProfileLink,
     email,
     emailTo,
     resumeDownloadLink,
+    resumeFileName
   } = HomeContent;
 
   useEffect(() => {
@@ -47,7 +48,7 @@ const ProfileCard = () => {
         <>
           <ProfileImage imageSrc={cardImage} alt={name} />
 
-          <ProfileInfo name={name} role={role} email={email} />
+          <ProfileInfo name={name} roles={roles} email={email} />
 
           {/* Use the SocialLinks component */}
           <SocialLinks
@@ -56,7 +57,7 @@ const ProfileCard = () => {
             emailTo={emailTo}
           />
           {/* Resume Download */}
-          <Resume resumeDownloadLink={resumeDownloadLink} />
+          <Resume resumeDownloadLink={resumeDownloadLink}  resumeFileName={resumeFileName}/>
         </>
       )}
     </animated.div>
