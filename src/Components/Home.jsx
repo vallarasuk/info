@@ -16,6 +16,7 @@ const Home = () => {
     titleIcon,
     title,
     description,
+    keywords
   } = HomeContent;
 
   const textAnimation = useSpring({
@@ -43,7 +44,7 @@ const Home = () => {
   return (
     <>
       <section className="home-section" id="home">
-        <SeoMetaTags name={name} role={role} titleIcon={titleIcon} />
+        <SeoMetaTags name={name} role={role} titleIcon={titleIcon} keywords = {keywords} />
 
         <div className="container">
           <div className="row align-items-center">

@@ -30,15 +30,18 @@ library.add(
 const HomePageData = {
   // Card Details
   iconImage: require("../Assets/Profile.jpg"),
-  titleIcon:
-    "https://us.123rf.com/450wm/berkut2011/berkut20111309/berkut2011130900093/21991120-abstract-icon-based-on-the-letter.jpg?ver=6",
+  titleIcon: require("../Assets/logo/favicon-16x16.png"),
   cardImage: require("../Assets/profileimgtwo.JPG"),
   MobileProfileImage: require("../Assets/profileimgtwo.JPG"),
   // resumeDownloadLink: require("../Assets/VALLARASU K.png"),
   resumeDownloadLink: require("../Assets/vallarasuReactDeveloper.pdf"),
   resumeFileName: "Vallarasu K",
   name: "Vallarasu Kanthasamy",
-  roles: ["Software Developer", "Wordpress Plugin Developer", "React Developer"],
+  roles: [
+    "Software Developer",
+    "Wordpress Plugin Developer",
+    "React Developer",
+  ],
   bio: "Passionate web developer specializing in React and other cutting-edge technologies.",
   email: "vallarasuk143@gmail.com",
   emailTo: "mailto:vallarasuk143@gmail.com",
@@ -99,33 +102,35 @@ const HomePageData = {
       previewImage: require("../Assets/portfolio 2.png"),
     },
     {
-        title: "Nexsens CB 250",
-        description: "Description for Project 5",
-        // gitLink: "https://github.com/vallarasuk/Vote-Check",
-        livePreview: "https://www.nexsens.com/products/data-buoys/cb-250",
-        previewImage: require("../Assets/cb 250 page.png"),
-      },
-      {
-        title: "X2 Environmental",
-        description: "Description for Project 6",
-        // gitLink: "https://github.com/vallarasuk/Vote-Check",
-        livePreview: "https://www.nexsens.com/products/data-loggers/x2-environmental-data-logger",
-        previewImage: require("../Assets/Nexsens X2 page.png"),
-      },
-      {
-        title: "Nexsens Contact Us",
-        description: "Description for Project 7",
-        // gitLink: "https://github.com/vallarasuk/Vote-Check",
-        livePreview: "https://www.nexsens.com/support/contact-us",
-        previewImage: require("../Assets/Nexsens Contact us page.png"),
-      },
-      {
-        title: "Nexsens YSI",
-        description: "Description for Project 8",
-        // gitLink: "https://github.com/vallarasuk/Vote-Check",
-        livePreview: "https://www.nexsens.com/products/sensors/water-quality/ysi-exo3-multi-parameter-water-quality-sonde",
-        previewImage: require("../Assets/YSI page.png"),
-      },
+      title: "Nexsens CB 250",
+      description: "Description for Project 5",
+      // gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview: "https://www.nexsens.com/products/data-buoys/cb-250",
+      previewImage: require("../Assets/cb 250 page.png"),
+    },
+    {
+      title: "X2 Environmental",
+      description: "Description for Project 6",
+      // gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview:
+        "https://www.nexsens.com/products/data-loggers/x2-environmental-data-logger",
+      previewImage: require("../Assets/Nexsens X2 page.png"),
+    },
+    {
+      title: "Nexsens Contact Us",
+      description: "Description for Project 7",
+      // gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview: "https://www.nexsens.com/support/contact-us",
+      previewImage: require("../Assets/Nexsens Contact us page.png"),
+    },
+    {
+      title: "Nexsens YSI",
+      description: "Description for Project 8",
+      // gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview:
+        "https://www.nexsens.com/products/sensors/water-quality/ysi-exo3-multi-parameter-water-quality-sonde",
+      previewImage: require("../Assets/YSI page.png"),
+    },
     // {
     //   title: "Vote Validate Check",
     //   description: "Description for Project 5",
@@ -157,6 +162,36 @@ const HomePageData = {
 
   aboutDescription:
     "My journey began with a standout achievement, securing 87% in my SSLC from the National Matriculation School. Building upon this foundation, I pursued a Diploma in Mechanical Engineering, channeling my curiosity towards front-end development. Now, with years of hands-on experience, I thrive as a React Developer at Thidiff Technology in Bangalore.",
+  keywords: [
+    "portfolio website",
+    "software developer",
+    "web development",
+    "front-end development",
+    "React developer",
+    "JavaScript developer",
+    "Bangalore",
+    "React front-end developer",
+    "WordPress plugin developer",
+
+    // Additional high-intent keywords (user searching for specific solutions):
+    "freelance React developer Bangalore",
+    "hire React developer India",
+    "JavaScript web development services",
+    "WordPress website development Bangalore",
+    "custom WordPress plugin development",
+
+    // Broader skills and technologies (increased reach):
+    "UI/UX design",
+    "API integration",
+    "web accessibility",
+    "responsive web design",
+    "SEO optimization",
+
+    // Location-specific keywords (target local clients):
+    "React developer near me",
+    "web development Bangalore",
+    "WordPress development services Bangalore",
+  ],
 };
 
 export default HomePageData;

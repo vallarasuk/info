@@ -11,6 +11,8 @@ import ProfileCard from "./Components/Lib/ProfileCard";
 import BottomNavbar from "./Components/Navbar/BottomNavbar";
 import NotFound from "./Components/Helper/NotFound";
 import ContentSection from "./Components/ContentSection";
+import SeoMetaTags from "./Components/Constant/SeoMetaTags";
+import HomeContent from "./Components/Constant/HomeContent";
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));
@@ -20,7 +22,12 @@ const Contact = lazy(() => import("./Components/Contact"));
 
 const AppMain = () => {
   const [isLoading, setIsLoading] = useState(true);
-
+  const {
+    name,
+    role,
+    titleIcon,
+    keywords
+  } = HomeContent;
   // Simulate loading time with useEffect hook
   useEffect(() => {
     setTimeout(() => {
@@ -33,6 +40,8 @@ const AppMain = () => {
 
   return (
     <HelmetProvider>
+        <SeoMetaTags name={name} role={role} titleIcon={titleIcon} keywords={keywords}/>
+      
       <Router>
         <div className="appOne-wrapper">
           {/* Navbar and BottomNavbar section */}
