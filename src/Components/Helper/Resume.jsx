@@ -27,10 +27,10 @@ const Resume = ({ resumeDownloadLink, resumeFileName }) => {
 
   return (
     <div className="row mt-3">
-      <div className="col-8 col-lg-12 offset-2 offset-lg-0 mt-4 mt-lg-3 shadow rounded-pill pointer">
+      <div className="col-8 col-lg-12 offset-2 offset-lg-0 mt-4 mt-lg-3 ">
         <button
           onClick={handleResumeDownload}
-          className="text-decoration-none btn p-4 text-center hover-animation"
+          className="text-decoration-none btn  px-lg-5 py-3 px-4 shadow rounded-pill pointer text-center hover-animation"
         >
           <FontAwesomeIcon size="xl" icon={faFileDownload} />
           <span className="ms-2 fw-bold">RESUME</span>

@@ -42,7 +42,7 @@ const AppMain = () => {
           <div className="container-fluid">
             <div className="row">
               {/* Left side - Your profile info card */}
-              <div className="col-lg-4">{isLargeScreen && <ProfileCard />}</div>
+              <div className="col-lg-4 ps-0">{isLargeScreen && <ProfileCard />}</div>
 
               {/* Right side - Other content */}
               <div className="col-lg-8 px-lg-3 py-md-2">

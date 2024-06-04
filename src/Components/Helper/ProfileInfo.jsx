@@ -50,10 +50,10 @@ const ProfileInfo = ({ name, email }) => {
       <animated.h2 className="mt-3 my-name" style={bottomAnimation}>
         {name}
       </animated.h2>
-      <animated.p className="mt-3 fw-semibold my-role" style={roleAnimation}>
+      <animated.h4 className="mt-4 fw-semibold my-role" style={roleAnimation}>
         {currentRole}
-      </animated.p>
-      <animated.p className="email-text" style={bottomAnimation}>
+      </animated.h4>
+      <animated.p className="email-text mt-4" style={bottomAnimation}>
         <a
           href={`mailto:${email}`}
           className="text-decoration-none text-black-50"
