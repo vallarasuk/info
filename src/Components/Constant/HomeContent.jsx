@@ -74,6 +74,30 @@ const HomePageData = {
   ],
   projectsData: [
     {
+      title: "Setup and Training",
+      description: "Description for Project 9",
+      // gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview:
+        "hhttps://www.fondriest.com/field-station/set-up-and-training/",
+      previewImage: require("../Assets/setup-and-training.png"),
+    },
+    {
+      title: "Home Page",
+      description: "Description for Project 10",
+      // gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview: "https://www.fondriest.com/field-station/",
+      previewImage: require("../Assets/fieldstation-Homepage.png"),
+    },
+    {
+      title: "Education Outreach",
+      description: "Description for Project 11",
+      // gitLink: "https://github.com/vallarasuk/Vote-Check",
+      livePreview:
+        "https://www.fondriest.com/field-station/educational-outreach/",
+      previewImage: require("../Assets/education-outreach.png"),
+    },
+    ,
+    {
       title: "Otto Clone",
       description: "Description for Project 1",
       gitLink: "https://github.com/vallarasuk/otto-landing-page",
@@ -131,6 +155,7 @@ const HomePageData = {
         "https://www.nexsens.com/products/sensors/water-quality/ysi-exo3-multi-parameter-water-quality-sonde",
       previewImage: require("../Assets/YSI page.png"),
     },
+
     // {
     //   title: "Vote Validate Check",
     //   description: "Description for Project 5",

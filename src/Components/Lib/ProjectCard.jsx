@@ -12,11 +12,13 @@ const ProjectCard = ({
 }) => {
   return (
     <div div className="shadow p-3 rounded-3">
-       {title ? (
-          <h5 className="card-title text-center fw-bold mt-2 mb-lg-4 bg-opacity-25 rounded-3 shadow py-3 bg-info">{title}</h5>
-        ) : (
-          <Skeleton width={150} duration={1.5} />
-        )}
+      {title ? (
+        <h5 className="card-title text-center fw-bold mt-2 mb-lg-4 bg-opacity-25 rounded-3 shadow py-3 bg-info">
+          {title}
+        </h5>
+      ) : (
+        <Skeleton width={150} duration={1.5} />
+      )}
       {previewImage && (
         <img
           src={previewImage}
@@ -25,7 +27,6 @@ const ProjectCard = ({
         />
       )}
       <div className="card-body">
-       
         {/* {description ? (
           <p className="card-text">{description}</p>
         ) : (

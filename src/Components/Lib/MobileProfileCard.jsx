@@ -1,11 +1,11 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import { animated, useSpring } from "react-spring";
 import HomeContent from "../Constant/HomeContent";
-import "./Styles/MobileProfileCard.css";
 import ProfileImage from "../Helper/ProfileImage";
 import ProfileInfo from "../Helper/ProfileInfo";
-import SocialLinks from "../Helper/SocialLinks";
 import Resume from "../Helper/Resume";
+import SocialLinks from "../Helper/SocialLinks";
+import "./Styles/MobileProfileCard.css";
 
 const MobileProfileCard = () => {
   const {
@@ -21,7 +21,6 @@ const MobileProfileCard = () => {
     title,
     description,
   } = HomeContent;
-
 
   // Define the animation effect for the profile card
   const cardAnimation = useSpring({
@@ -52,12 +51,17 @@ const MobileProfileCard = () => {
             emailTo={emailTo}
           />
           {/* Use the Resume component */}
-          <Resume resumeDownloadLink={resumeDownloadLink} resumeFileName={resumeFileName} />
+          <Resume
+            resumeDownloadLink={resumeDownloadLink}
+            resumeFileName={resumeFileName}
+          />
         </div>
       </animated.div>
       <animated.div>
-        <div className="mobile-content-section my-4">
-          <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4 ">{title}</h2>
+        <div className="mobile-content-section my-2">
+          <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4 ">
+            {title}
+          </h2>
           {description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
