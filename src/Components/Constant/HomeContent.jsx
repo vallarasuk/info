@@ -78,7 +78,7 @@ const HomePageData = {
       description: "Description for Project 9",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview:
-        "hhttps://www.fondriest.com/field-station/set-up-and-training/",
+        "https://www.fondriest.com/field-station/set-up-and-training/",
       previewImage: require("../Assets/setup-and-training.png"),
     },
     {
