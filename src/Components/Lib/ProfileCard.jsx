@@ -47,17 +47,13 @@ const ProfileCard = () => {
       {!isLoading && (
         <>
           <ProfileImage imageSrc={cardImage} alt={name} />
-
           <ProfileInfo name={name} roles={roles} email={email} />
-
-          {/* Use the SocialLinks component */}
           <SocialLinks
             linkedInProfileLink={linkedInProfileLink}
             githubProfileLink={githubProfileLink}
             emailTo={emailTo}
           />
-          {/* Resume Download */}
-          <Resume resumeDownloadLink={resumeDownloadLink}  resumeFileName={resumeFileName}/>
+          <Resume resumeDownloadLink={resumeDownloadLink} resumeFileName={resumeFileName} />
         </>
       )}
     </animated.div>

@@ -8,7 +8,7 @@ const Title = ({ text }) => {
     // Simulate a delay for the loading animation
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 100);
+    }, 1000); // Adjust the loading time as needed
 
     return () => clearTimeout(loadingTimer);
   }, []);
@@ -20,12 +20,12 @@ const Title = ({ text }) => {
 
   return (
     <motion.h2
-      className="motion-title my-4" // Add any styles you want to apply to the title here
+      className="motion-title my-4"
       variants={titleVariants}
       initial="hidden"
       animate={isLoading ? "hidden" : "visible"}
     >
-      {isLoading ? " " : text}
+      {isLoading ? "Loading..." : text}
     </motion.h2>
   );
 };

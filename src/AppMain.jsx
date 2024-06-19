@@ -1,18 +1,18 @@
+// src/AppMain.js
 import React, { lazy, Suspense, useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { useMediaQuery } from "react-responsive";
-import Navbar from "./Components/Navbar/Navbar";
-// import Footer from "./Components/Footer/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
+import HomeContent from "./Components/Constant/HomeContent";
+import SeoMetaTags from "./Components/Constant/SeoMetaTags";
+import ContentSection from "./Components/ContentSection";
+import ProfileCard from "./Components/Lib/ProfileCard";
 import "./Components/Styles/App.css";
 import "./Components/Styles/AppOne.css";
-import ProfileCard from "./Components/Lib/ProfileCard";
-import BottomNavbar from "./Components/Navbar/BottomNavbar";
-import NotFound from "./Components/Helper/NotFound";
-import ContentSection from "./Components/ContentSection";
-import SeoMetaTags from "./Components/Constant/SeoMetaTags";
-import HomeContent from "./Components/Constant/HomeContent";
+import {
+  initializeAnalytics,
+  GoogleAnalytics,
+} from "./Components/googleAnalytics/analytics"; // Import GA components
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));
@@ -23,11 +23,15 @@ const Contact = lazy(() => import("./Components/Contact"));
 const AppMain = () => {
   const [isLoading, setIsLoading] = useState(true);
   const { name, role, titleIcon, keywords } = HomeContent;
-  // Simulate loading time with useEffect hook
+
   useEffect(() => {
+    // Simulate loading time
     setTimeout(() => {
       setIsLoading(false);
     }, 2000); // Adjust the time as needed
+
+    // Initialize Google Analytics
+    initializeAnalytics();
   }, []);
 
   const isSmallScreen = useMediaQuery({ maxWidth: 991 }); // Adjust the max width for small screens
@@ -43,11 +47,13 @@ const AppMain = () => {
       />
 
       <Router>
+        {/* Initialize and track Google Analytics */}
+        <GoogleAnalytics />
+
         <div className="appOne-wrapper">
           {/* Navbar and BottomNavbar section */}
           {/* {isLargeScreen && <Navbar />} */}
           {/* {isSmallScreen && <BottomNavbar />} */}
-
           <div className="container-fluid">
             <div className="row">
               {/* Left side - Your profile info card */}
@@ -63,11 +69,9 @@ const AppMain = () => {
                       <div className="loading-container">Loading...</div>
                     }
                   >
-                    {/* Add loading animation with icons */}
                     {isLoading ? (
                       <div className="loading-container">
                         <div className="icon">
-                          {/* Use FontAwesome or any other icon library */}
                           <i className="fa fa-spinner fa-spin fa-3x text-secondary"></i>
                         </div>
                       </div>
@@ -95,7 +99,6 @@ const AppMain = () => {
                       //   {/* Add the 404 page */}
                       //   <Route path="*" element={<NotFound />} />
                       // </Routes>
-
                       <ContentSection />
                     )}
                   </Suspense>
