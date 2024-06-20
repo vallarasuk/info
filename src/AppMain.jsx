@@ -6,13 +6,15 @@ import { BrowserRouter as Router } from "react-router-dom";
 import HomeContent from "./Components/Constant/HomeContent";
 import SeoMetaTags from "./Components/Constant/SeoMetaTags";
 import ContentSection from "./Components/ContentSection";
+import {
+  GoogleAnalytics,
+  initializeAnalytics,
+} from "./Components/googleAnalytics/analytics"; // Import GA components
 import ProfileCard from "./Components/Lib/ProfileCard";
 import "./Components/Styles/App.css";
 import "./Components/Styles/AppOne.css";
-import {
-  initializeAnalytics,
-  GoogleAnalytics,
-} from "./Components/googleAnalytics/analytics"; // Import GA components
+
+import { RiseLoader } from "react-spinners";
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));
@@ -72,7 +74,8 @@ const AppMain = () => {
                     {isLoading ? (
                       <div className="loading-container">
                         <div className="icon">
-                          <i className="fa fa-spinner fa-spin fa-3x text-secondary"></i>
+                          <RiseLoader color="#000000" />
+                          {/* <i className="fa fa-spinner fa-spin fa-3x text-secondary"></i> */}
                         </div>
                       </div>
                     ) : (
