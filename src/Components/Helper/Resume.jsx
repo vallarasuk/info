@@ -26,7 +26,7 @@ const Resume = ({ resumeDownloadLink, resumeFileName }) => {
   };
 
   return (
-    <div className="row mt-3">
+    <div className="row mt-2">
       <div className="col-8 col-lg-12 offset-2 offset-lg-0 mt-4 mt-lg-3 ">
         <button
           onClick={handleResumeDownload}

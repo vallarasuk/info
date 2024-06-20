@@ -20,7 +20,7 @@
 }
 
 .mobile-profile-card-container {
-  height: 70vh;
+  height: 65vh;
 }
 
 @media (min-width: 480px) and (max-width: 991px) {
