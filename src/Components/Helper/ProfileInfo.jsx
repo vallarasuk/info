@@ -5,11 +5,12 @@ import { useInView } from "react-intersection-observer";
 const ProfileInfo = ({ name, email }) => {
   const roles = [
     "Software Developer",
-    "Wordpress Plugin Developer",
+    "WordPress Plugin Developer",
     "React Developer",
   ];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
+  // Role change effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
@@ -20,29 +21,32 @@ const ProfileInfo = ({ name, email }) => {
 
   const currentRole = roles[currentRoleIndex];
 
+  // Animation configuration
   const animationConfig = {
-    duration: 1000,
-    tension: 200,
-    friction: 20,
+    tension: 170,
+    friction: 26,
   };
 
+  // Intersection observer for triggering animation
   const [bottomRef, bottomInView] = useInView({
     triggerOnce: true,
     rootMargin: "-100px",
   });
 
+  // Bottom animation spring
   const bottomAnimation = useSpring({
     transform: bottomInView ? "translateY(0px)" : "translateY(50px)",
-    from: { transform: "translateY(50px)" },
+    opacity: bottomInView ? 1 : 0,
     config: animationConfig,
   });
 
+  // Role change animation spring
   const roleAnimation = useSpring({
     opacity: 1,
     transform: "translateY(0px)",
     from: { opacity: 0, transform: "translateY(10px)" },
     reset: true,
-    config: { duration: 500 },
+    config: { duration: 1000 },
   });
 
   return (
