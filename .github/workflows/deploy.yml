@@ -28,7 +28,12 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp.vallarasuk.com
-          username: vallaras_wp74@vallarasuk.com
-          password:  H@sani143@  
+          username: vallaras
+          password: H@sani143@  # Use GitHub Secrets for FTP password
           local-dir: ./build
-          remote-dir: public_html
+          remote-dir: /home/vallaras/public_html  # Adjust path as per your cPanel setup
+          exclude: |
+            .git*
+            .github/*
+            README.md
+            node_modules/*
