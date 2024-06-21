@@ -1,0 +1,34 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Adjust as per your branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Deploy to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.vallarasuk.com
+          username: vallaras_wp74@vallarasuk.com
+          password:  H@sani143@  
+          local-dir: ./build
+          remote-dir: public_html
