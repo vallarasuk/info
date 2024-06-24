@@ -18,8 +18,6 @@ const MobileProfileCard = () => {
     MobileProfileImage,
     resumeDownloadLink,
     resumeFileName,
-    title,
-    description,
   } = HomeContent;
 
   // Define the animation effect for the profile card
@@ -32,7 +30,6 @@ const MobileProfileCard = () => {
   });
 
   return (
-    <>
       <animated.div
         className="mobile-profile-card-container d-flex justify-content-center align-items-center mb-2 d-md-none"
         style={cardAnimation}
@@ -57,17 +54,6 @@ const MobileProfileCard = () => {
           />
         </div>
       </animated.div>
-      <animated.div>
-        <div className="mobile-content-section ">
-          <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4 ">
-            {title}
-          </h2>
-          {description.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
-      </animated.div>
-    </>
   );
 };
 

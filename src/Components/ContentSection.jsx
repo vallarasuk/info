@@ -52,6 +52,15 @@ const ContentSection = () => {
       </header> */}
 
       <MobileProfileCard />
+
+      <div className="mobile-content-section ">
+        <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4 ">
+          {title}
+        </h2>
+        {description.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
       {/* About Section */}
       <section className="about">
         <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">
