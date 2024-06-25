@@ -75,7 +75,7 @@ const HomePageData = {
   projectsData: [
     {
       title: "Setup and Training",
-      description: "Description for Project 9",
+      description: "Description for Project 1",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview:
         "https://www.fondriest.com/field-station/set-up-and-training/",
@@ -83,14 +83,14 @@ const HomePageData = {
     },
     {
       title: "Home Page",
-      description: "Description for Project 10",
+      description: "Description for Project 2",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview: "https://www.fondriest.com/field-station/",
       previewImage: require("../Assets/fieldstation-Homepage.png"),
     },
     {
       title: "Education Outreach",
-      description: "Description for Project 11",
+      description: "Description for Project 3",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview:
         "https://www.fondriest.com/field-station/educational-outreach/",
@@ -99,42 +99,42 @@ const HomePageData = {
     ,
     {
       title: "Otto Clone",
-      description: "Description for Project 1",
+      description: "Description for Project 4",
       gitLink: "https://github.com/vallarasuk/otto-landing-page",
       livePreview: "https://vallarasuk.github.io/otto-landing-page/",
       previewImage: require("../Assets/otto landing.png"),
     },
     {
       title: "Macro Touch Clone",
-      description: "Description for Project 2",
+      description: "Description for Project 5",
       gitLink: "https://github.com/vallarasuk/Macro-Touch",
       livePreview: "https://vallarasuk.github.io/Macro-Touch/",
       previewImage: require("../Assets/macroTouch.png"),
     },
     {
       title: "About Internet Blog",
-      description: "Description for Project 3",
+      description: "Description for Project 6",
       gitLink: "https://github.com/vallarasuk/Front-End-Blog",
       livePreview: "https://vallarasuk.github.io/Front-End-Blog/",
       previewImage: require("../Assets/about internet blog.png"),
     },
     {
       title: "Portfolio",
-      description: "Description for Project 4",
+      description: "Description for Project 7",
       // gitLink: "https://vallarasuk.github.io/otto-landing-page/",
       livePreview: "https://vallarasuk.w3spaces.com/",
       previewImage: require("../Assets/portfolio 2.png"),
     },
     {
       title: "Nexsens CB 250",
-      description: "Description for Project 5",
+      description: "Description for Project 8",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview: "https://www.nexsens.com/products/data-buoys/cb-250",
       previewImage: require("../Assets/cb 250 page.png"),
     },
     {
       title: "X2 Environmental",
-      description: "Description for Project 6",
+      description: "Description for Project 9",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview:
         "https://www.nexsens.com/products/data-loggers/x2-environmental-data-logger",
@@ -142,14 +142,14 @@ const HomePageData = {
     },
     {
       title: "Nexsens Contact Us",
-      description: "Description for Project 7",
+      description: "Description for Project 10",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview: "https://www.nexsens.com/support/contact-us",
       previewImage: require("../Assets/Nexsens Contact us page.png"),
     },
     {
       title: "Nexsens YSI",
-      description: "Description for Project 8",
+      description: "Description for Project 11",
       // gitLink: "https://github.com/vallarasuk/Vote-Check",
       livePreview:
         "https://www.nexsens.com/products/sensors/water-quality/ysi-exo3-multi-parameter-water-quality-sonde",
