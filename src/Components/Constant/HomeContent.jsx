@@ -213,7 +213,7 @@ const HomePageData = {
     "SEO optimization",
 
     // Location-specific keywords (target local clients):
-    "React developer near me",
+    "React developer",
     "web development Bangalore",
     "WordPress development services Bangalore",
   ],
