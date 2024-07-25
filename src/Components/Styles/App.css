@@ -1,14 +1,14 @@
 /* Colors */
 :root {
-  --primary-color: #333;
+  --primary-color: black;
   /* Background and primary text color */
-  --secondary-color: #555;
+  --secondary-color: black;
   /* Hover background color */
   --accent-color: #fff;
   /* Accent color for icons */
   --light-bg-color: #f0f0f0;
   /* Light mode: Background color */
-  --light-text-color: #333;
+  --light-text-color: black;
   /* Light mode: Primary text color */
   --light-hover-bg-color: #f0f0f0;
   /* Light mode: Hover background color */

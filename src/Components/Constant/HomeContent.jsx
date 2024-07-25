@@ -31,8 +31,8 @@ const HomePageData = {
   // Card Details
   iconImage: require("../Assets/Profile.jpg"),
   titleIcon: require("../Assets/logo/favicon-16x16.png"),
-  cardImage: require("../Assets/profileimgtwo.JPG"),
-  MobileProfileImage: require("../Assets/profileimgtwo.JPG"),
+  cardImage: require("../Assets/profile.jpeg"),
+  MobileProfileImage: require("../Assets/profile.jpeg"),
   // resumeDownloadLink: require("../Assets/VALLARASU K.png"),
   resumeDownloadLink: require("../Assets/vallarasuReactDeveloper.pdf"),
   resumeFileName: "Vallarasu K",
