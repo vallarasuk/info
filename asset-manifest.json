@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.612b1b9a.css",
-    "main.js": "/static/js/main.187dbea8.js",
+    "main.js": "/static/js/main.f159af93.js",
     "static/css/897.73783bf8.chunk.css": "/static/css/897.73783bf8.chunk.css",
     "static/js/897.24008705.chunk.js": "/static/js/897.24008705.chunk.js",
     "static/css/982.32df15c1.chunk.css": "/static/css/982.32df15c1.chunk.css",
@@ -12,7 +12,6 @@
     "static/js/791.b76435bb.chunk.js": "/static/js/791.b76435bb.chunk.js",
     "static/media/education-outreach.png": "/static/media/education-outreach.c275b6b3f77c9e920711.png",
     "static/media/fieldstation-Homepage.png": "/static/media/fieldstation-Homepage.fbb2b64d13cf283674f7.png",
-    "static/media/Profile.jpg": "/static/media/Profile.f4b87a4bdc1265aa75fe.jpg",
     "static/media/Nexsens X2 page.png": "/static/media/Nexsens X2 page.6f7c94d44d7fa9675e28.png",
     "static/media/setup-and-training.png": "/static/media/setup-and-training.7e7731497f5273abeb3d.png",
     "static/media/cb 250 page.png": "/static/media/cb 250 page.ce107d1ac4937f1c4e30.png",
@@ -24,17 +23,17 @@
     "static/media/portfolio 2.png": "/static/media/portfolio 2.7e765bd9a49346b3c792.png",
     "static/media/about internet blog.png": "/static/media/about internet blog.ae3c98afa033fa7c4915.png",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
-    "static/media/profile.jpeg": "/static/media/profile.fc94a1795b0320c405ca.jpeg",
     "static/media/vallarasuReactDeveloper.pdf": "/static/media/vallarasuReactDeveloper.ca04bbd4acdd2447f541.pdf",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/otto landing.png": "/static/media/otto landing.841cd6475913b115511b.png",
     "static/media/Nexsens Contact us page.png": "/static/media/Nexsens Contact us page.797c91277b83006355a4.png",
+    "static/media/vallarasuk.jpeg": "/static/media/vallarasuk.a925df12456e7e59d611.jpeg",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
     "main.612b1b9a.css.map": "/static/css/main.612b1b9a.css.map",
-    "main.187dbea8.js.map": "/static/js/main.187dbea8.js.map",
+    "main.f159af93.js.map": "/static/js/main.f159af93.js.map",
     "897.73783bf8.chunk.css.map": "/static/css/897.73783bf8.chunk.css.map",
     "897.24008705.chunk.js.map": "/static/js/897.24008705.chunk.js.map",
     "982.32df15c1.chunk.css.map": "/static/css/982.32df15c1.chunk.css.map",
@@ -46,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.612b1b9a.css",
-    "static/js/main.187dbea8.js"
+    "static/js/main.f159af93.js"
   ]
 }
