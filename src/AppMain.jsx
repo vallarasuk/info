@@ -30,7 +30,7 @@ const AppMain = () => {
     // Simulate loading time
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust the time as needed
+    }, 1); // Adjust the time as needed
 
     // Initialize Google Analytics
     initializeAnalytics();

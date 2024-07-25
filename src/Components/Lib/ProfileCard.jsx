@@ -24,7 +24,7 @@ const ProfileCard = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1);
   }, []);
 
   const fadeInProps = useSpring({
