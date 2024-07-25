@@ -24,7 +24,7 @@ const Contact = lazy(() => import("./Components/Contact"));
 
 const AppMain = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const { name, role, titleIcon, keywords } = HomeContent;
+  const { name, role, titleIcon, keywords, cardImage } = HomeContent;
 
   useEffect(() => {
     // Simulate loading time
@@ -46,6 +46,7 @@ const AppMain = () => {
         role={role}
         titleIcon={titleIcon}
         keywords={keywords}
+        cardImage ={cardImage}
       />
 
       <Router>
