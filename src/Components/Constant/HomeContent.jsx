@@ -29,10 +29,10 @@ library.add(
 // Updated and enhanced data for the home page
 const HomePageData = {
   // Card Details
-  iconImage: require("../Assets/Profile.jpg"),
+  iconImage: require("../Assets/vallarasuk.jpeg"),
   titleIcon: require("../Assets/logo/favicon-16x16.png"),
-  cardImage: require("../Assets/profile.jpeg"),
-  MobileProfileImage: require("../Assets/profile.jpeg"),
+  cardImage: require("../Assets/vallarasuk.jpeg"),
+  MobileProfileImage: require("../Assets/vallarasuk.jpeg"),
   // resumeDownloadLink: require("../Assets/VALLARASU K.png"),
   resumeDownloadLink: require("../Assets/vallarasuReactDeveloper.pdf"),
   resumeFileName: "Vallarasu K",
