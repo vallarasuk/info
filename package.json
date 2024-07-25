@@ -73,7 +73,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "minify-css": "NODE_ENV=production webpack --config webpack.config.js"
   },
   "eslintConfig": {
     "extends": [
@@ -95,7 +96,8 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "mini-css-extract-plugin": "^2.9.0"
   },
   "settings": {
     "react": {
