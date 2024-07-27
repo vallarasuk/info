@@ -18,8 +18,10 @@ const ProfileCard = () => {
     email,
     emailTo,
     resumeDownloadLink,
-    resumeFileName
+    resumeFileName,
+    mobileProfileImage
   } = HomeContent;
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -53,7 +55,10 @@ const ProfileCard = () => {
             githubProfileLink={githubProfileLink}
             emailTo={emailTo}
           />
-          <Resume resumeDownloadLink={resumeDownloadLink} resumeFileName={resumeFileName} />
+          <Resume
+            resumeDownloadLink={resumeDownloadLink}
+            resumeFileName={resumeFileName}
+          />
         </>
       )}
     </animated.div>

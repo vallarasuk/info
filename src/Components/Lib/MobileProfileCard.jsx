@@ -15,7 +15,7 @@ const MobileProfileCard = () => {
     githubProfileLink,
     email,
     emailTo,
-    MobileProfileImage,
+    mobileProfileImage,
     resumeDownloadLink,
     resumeFileName,
   } = HomeContent;
@@ -36,7 +36,7 @@ const MobileProfileCard = () => {
       >
         <div className="text-center">
           {/* Use the ProfileImage component */}
-          <ProfileImage imageSrc={MobileProfileImage} alt={name} />
+          <ProfileImage  mobileProfileImage={mobileProfileImage} alt={name} />
 
           {/* Use the ProfileInfo component */}
           <ProfileInfo name={name} role={role} email={email} />
