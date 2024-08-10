@@ -13,9 +13,9 @@ const ProjectCard = ({
   const CardContent = () => (
     <>
       {title ? (
-        <h6 className="h5 card-title text-center fw-bold bg-info text-white p-3 rounded-top">
+        <p className="h5 card-title text-center fw-bold bg-custom-dark text-custom-light p-3 rounded-top">
           {title}
-        </h6>
+        </p>
       ) : (
         <Skeleton width={150} duration={1.5} />
       )}

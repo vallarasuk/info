@@ -140,7 +140,7 @@ const HomePageData = {
     {
       title: "X2 Environmental",
       description:
-        "Developed a detailed product page for the Nexsens X2 environmental data logger.",
+        "Developed a product page for the Nexsens X2 environmental data logger.",
       livePreview:
         "https://www.nexsens.com/products/data-loggers/x2-environmental-data-logger",
       previewImage: require("../Assets/Nexsens X2 page.png"),

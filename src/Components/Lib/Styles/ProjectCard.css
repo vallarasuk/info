@@ -60,3 +60,18 @@
 .btn-secondary:hover {
   opacity: 0.8;
 }
+
+.bg-custom-dark {
+  background-color: #004085;
+  /* Dark Navy Blue */
+}
+
+.text-custom-dark {
+  color: #ffffff;
+  /* White */
+}
+
+.text-custom-light {
+  color: #f8f9fa;
+  /* Light Gray */
+}
