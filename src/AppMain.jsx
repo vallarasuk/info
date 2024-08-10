@@ -1,4 +1,3 @@
-// src/AppMain.js
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { useMediaQuery } from "react-responsive";
@@ -28,12 +27,15 @@ const AppMain = () => {
 
   useEffect(() => {
     // Simulate loading time
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1); // Adjust the time as needed
 
     // Initialize Google Analytics
     initializeAnalytics();
+
+    // Clean up the timer
+    return () => clearTimeout(timer);
   }, []);
 
   const isSmallScreen = useMediaQuery({ maxWidth: 991 }); // Adjust the max width for small screens
@@ -68,41 +70,13 @@ const AppMain = () => {
               <div className="col-lg-8 px-lg-3 py-md-2">
                 <div className="split-screen-container pt-md-4">
                   <Suspense
-                    fallback={
-                      <div className="loading-container">Loading...</div>
-                    }
+                  
                   >
                     {isLoading ? (
                       <div className="loading-container">
-                        <div className="icon">
-                          <RiseLoader color="#000000" />
-                          {/* <i className="fa fa-spinner fa-spin fa-3x text-secondary"></i> */}
-                        </div>
+                        <RiseLoader color="#000000" />
                       </div>
                     ) : (
-                      // <Routes>
-                      //   <Route
-                      //     path="/"
-                      //     element={
-                      //       <TransitionGroup>
-                      //         <CSSTransition
-                      //           key="home"
-                      //           in={true}
-                      //           appear={true}
-                      //           timeout={500}
-                      //           classNames="fade"
-                      //         >
-                      //           <Home />
-                      //         </CSSTransition>
-                      //       </TransitionGroup>
-                      //     }
-                      //   />
-                      //   <Route path="/about" element={<About />} />
-                      //   <Route path="/projects" element={<Projects />} />
-                      //   <Route path="/contact" element={<Contact />} />
-                      //   {/* Add the 404 page */}
-                      //   <Route path="*" element={<NotFound />} />
-                      // </Routes>
                       <ContentSection />
                     )}
                   </Suspense>
