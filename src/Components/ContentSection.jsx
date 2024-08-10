@@ -82,18 +82,18 @@ const ContentSection = () => {
             <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">
               {skillsTitle}
             </h2>
-            <Row className="gap-5 d-flex justify-content-center">
+            <Row className="gap-5">
               {skills.map((skill, index) => (
                 <Col
-                  xs={12}
-                  md={6}
+                  xs={5}
+                  md={3}
                   lg={3}
                   key={index}
                   className="text-center mb-lg-3 shadow p-3 p-lg-4 rounded-3"
                 >
                   <div className="skill my-sm-3">
                     <FontAwesomeIcon icon={skill.icon} size="2x" />
-                    <p className="text-capitalize">{skill.name}</p>
+                    <p className="text-capitalize mb-0">{skill.name}</p>
                   </div>
                 </Col>
               ))}
@@ -127,11 +127,13 @@ const ContentSection = () => {
             Education
           </h2>
           {studies.map((study, index) => (
-            <div className="study" key={index}>
-              <h3>{study.title}</h3>
-              <p>{study.year}</p>
+            <div className="study mb-4" key={index}>
+              <div className="d-flex justify-content-between align-items-center">
+                <h3 className="my-3">{study.title}</h3>
+                <p className=" text-end mb-0 text-muted fst-italic">{study.year}</p>
+              </div>
               <p>{study.institution}</p>
-              <p>{study.description}</p>
+              <p className="mb-3">{study.description}</p>
             </div>
           ))}
         </section>
