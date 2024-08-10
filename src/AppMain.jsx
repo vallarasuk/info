@@ -58,7 +58,7 @@ const AppMain = () => {
           {/* {isLargeScreen && <Navbar />} */}
           {/* {isSmallScreen && <BottomNavbar />} */}
           <div className="container-fluid p-0">
-            <div className="row">
+            <div className="row p-0 m-0">
               {/* Left side - Your profile info card */}
               <div className="col-lg-4 ps-0">
                 {isLargeScreen && <ProfileCard />}
