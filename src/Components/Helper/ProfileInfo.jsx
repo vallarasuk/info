@@ -54,9 +54,9 @@ const ProfileInfo = ({ name, email }) => {
       <animated.h2 className="mt-3 my-name" style={bottomAnimation}>
         {name}
       </animated.h2>
-      <animated.h5 className="mt-4 fw-semibold my-role" style={roleAnimation}>
+      <animated.h6 className="mt-4 fw-semibold my-role h5" style={roleAnimation}>
         {currentRole}
-      </animated.h5>
+      </animated.h6>
       <animated.h5 className="email-text mt-4" style={bottomAnimation}>
         <a
           href={`mailto:${email}`}
