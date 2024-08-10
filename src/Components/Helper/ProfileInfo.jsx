@@ -57,11 +57,11 @@ const ProfileInfo = ({ name, email }) => {
       <animated.p className="mt-4 fw-semibold my-role" style={roleAnimation}>
         {currentRole}
       </animated.p>
-      <animated.h5 className="email-text mt-4" style={bottomAnimation}>
+      <animated.p className="h5 email-text mt-4" style={bottomAnimation}>
         <a href={`mailto:${email}`} className="text-decoration-none text-black">
           {email}
         </a>
-      </animated.h5>
+      </animated.p>
       <animated.div
         className="extra-info"
         style={bottomAnimation}
