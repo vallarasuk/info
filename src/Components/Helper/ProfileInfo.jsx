@@ -54,7 +54,7 @@ const ProfileInfo = ({ name, email }) => {
       <animated.h2 className="mt-3 my-name" style={bottomAnimation}>
         {name}
       </animated.h2>
-      <animated.p className="mt-4 fw-semibold my-role" style={roleAnimation}>
+      <animated.p className="mt-4 fw-semibold my-role h5" style={roleAnimation}>
         {currentRole}
       </animated.p>
       <animated.p className="h5 email-text mt-4" style={bottomAnimation}>
