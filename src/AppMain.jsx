@@ -23,7 +23,8 @@ const Contact = lazy(() => import("./Components/Contact"));
 
 const AppMain = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const { name, role, titleIcon, keywords, cardImage } = HomeContent;
+  const { name, role, titleIcon, keywords, cardImage, siteUrl, twitterHandle } =
+    HomeContent;
 
   useEffect(() => {
     // Simulate loading time
@@ -49,6 +50,8 @@ const AppMain = () => {
         titleIcon={titleIcon}
         keywords={keywords}
         cardImage={cardImage}
+        twitterHandle={twitterHandle}
+        siteUrl={siteUrl}
       />
 
       <Router>
@@ -69,9 +72,7 @@ const AppMain = () => {
               {/* Right side - Other content */}
               <div className="col-lg-8 px-lg-3 py-md-2">
                 <div className="split-screen-container pt-md-4">
-                  <Suspense
-                  
-                  >
+                  <Suspense>
                     {isLoading ? (
                       <div className="loading-container">
                         <RiseLoader color="#000000" />

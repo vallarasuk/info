@@ -33,6 +33,8 @@ library.add(
 // Updated and enhanced data for the home page
 const HomePageData = {
   // Card Details
+  twitterHandle: "@vallarasuk143",
+  siteUrl: "https://vallarasuk.com/",
   iconImage: require("../Assets/vallarasuk.jpeg"),
   titleIcon: require("../Assets/logo/favicon-16x16.png"),
   cardImage: require("../Assets/vallarasuk.jpeg"),

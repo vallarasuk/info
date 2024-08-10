@@ -58,16 +58,18 @@ const ContentSection = () => {
           <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4 ">
             {title}
           </h2>
-          {description.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+          <div className="px-4">
+            {description.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
         </div>
         {/* About Section */}
         <section className="about">
           <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">
             About Me
           </h2>
-          <p>{aboutDescription}</p>
+          <p className="px-4">{aboutDescription}</p>
         </section>
 
         {/* Work Section */}
@@ -82,11 +84,11 @@ const ContentSection = () => {
             <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">
               {skillsTitle}
             </h2>
-            <Row className="gap-5">
+            <Row className="gap-5 gap-lg-5 px-4 justify-content-center">
               {skills.map((skill, index) => (
                 <Col
                   xs={5}
-                  md={3}
+                  md={6}
                   lg={3}
                   key={index}
                   className="text-center mb-lg-3 shadow p-3 p-lg-4 rounded-3"
@@ -127,12 +129,14 @@ const ContentSection = () => {
             Education
           </h2>
           {studies.map((study, index) => (
-            <div className="study mb-4" key={index}>
+            <div className="study mb-4 px-4" key={index}>
               <div className="d-flex justify-content-between align-items-center">
-                <h3 className="my-3">{study.title}</h3>
-                <p className=" text-end mb-0 text-muted fst-italic">{study.year}</p>
+                <h3 className="my-3 ">{study.title}</h3>
+                <p className=" text-end mb-0 text-muted fst-italic">
+                  {study.year}
+                </p>
               </div>
-              <p>{study.institution}</p>
+              <p className="h5 fw-bold  mb-3">{study.institution}</p>
               <p className="mb-3">{study.description}</p>
             </div>
           ))}
