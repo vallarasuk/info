@@ -8,7 +8,7 @@ const MyWorks = ({ projectsData }) => {
       <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">
         My Works
       </h2>
-      <div className="work-list-title row">
+      <div className="work-list-title row px-4">
         {projectsData.map((project, index) => (
           <Col key={index} xs={12} md={6} lg={4} className="my-3">
             <ProjectCard
