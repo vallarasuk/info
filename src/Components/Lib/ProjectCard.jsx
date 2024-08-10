@@ -21,11 +21,15 @@ const ProjectCard = ({
       )}
       {previewImage && (
         <div className="card-img-container">
-          <img
-            src={previewImage}
-            alt={title ? `${title} Project` : "Project"}
-            className="card-img-top rounded"
-          />
+          <picture>
+            <img
+              src={previewImage}
+              alt={title ? `${title} Project` : "Project"}
+              className="card-img-top rounded"
+              style={{ maxWidth: "100%", height: "auto" }}
+              loading="lazy"
+            />
+          </picture>
         </div>
       )}
       <div className="card-body p-3">

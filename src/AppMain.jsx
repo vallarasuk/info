@@ -46,7 +46,7 @@ const AppMain = () => {
         role={role}
         titleIcon={titleIcon}
         keywords={keywords}
-        cardImage ={cardImage}
+        cardImage={cardImage}
       />
 
       <Router>
@@ -57,7 +57,7 @@ const AppMain = () => {
           {/* Navbar and BottomNavbar section */}
           {/* {isLargeScreen && <Navbar />} */}
           {/* {isSmallScreen && <BottomNavbar />} */}
-          <div className="container-fluid p-0 p-sm-3">
+          <div className="container-fluid p-0">
             <div className="row">
               {/* Left side - Your profile info card */}
               <div className="col-lg-4 ps-0">
