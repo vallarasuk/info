@@ -34,7 +34,7 @@ const ContentSection = () => {
   } = HomePageData; // Assuming HomePageData is imported here
 
   return (
-    <Container className="your-component p-0">
+    <Container className="p-0">
       {/* Header Section */}
       {/* <header>
         <Row>

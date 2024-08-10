@@ -36,7 +36,7 @@ const HomePageData = {
   iconImage: require("../Assets/vallarasuk.jpeg"),
   titleIcon: require("../Assets/logo/favicon-16x16.png"),
   cardImage: require("../Assets/vallarasuk.jpeg"),
-  mobileProfileImage: require("../Assets/vallarasu_profile.webp"),
+  mobileProfileImage: require("../Assets/vallarasuk.jpeg"),
   resumeDownloadLink: require("../Assets/vallarasuReactDeveloper.pdf"),
   resumeFileName: "Vallarasu K",
   name: "Vallarasu Kanthasamy",
