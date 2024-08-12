@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 const ProfileImage = ({
-  imageSrc,
+  cardImage,
   alt,
   mobileProfileImage,
   loadingAnimation,
@@ -11,34 +10,46 @@ const ProfileImage = ({
   const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
 
   useEffect(() => {
-    // Load desktop image
-    const desktopImg = new Image();
-    desktopImg.src = imageSrc;
-    desktopImg.onload = () => setDesktopImageLoaded(true);
+    if (cardImage) {
+      const desktopImg = new Image();
+      desktopImg.src = cardImage;
+      desktopImg.onload = () => setDesktopImageLoaded(true);
+      desktopImg.onerror = () => setDesktopImageLoaded(false); // Handle load error
+    } else {
+      console.error("cardImage is undefined.");
+    }
 
-    // Load mobile image
-    const mobileImg = new Image();
-    mobileImg.src = mobileProfileImage;
-    mobileImg.onload = () => setMobileImageLoaded(true);
-  }, [imageSrc, mobileProfileImage]);
+    if (mobileProfileImage) {
+      const mobileImg = new Image();
+      mobileImg.src = mobileProfileImage;
+      mobileImg.onload = () => setMobileImageLoaded(true);
+      mobileImg.onerror = () => setMobileImageLoaded(false); // Handle load error
+    } else {
+      console.error("mobileProfileImage is undefined.");
+    }
+  }, [cardImage, mobileProfileImage]);
 
   return (
-    <Link to="/about" className="profile-image-link">
+    <>
       <img
-        src={desktopImageLoaded ? imageSrc : loadingAnimation}
-        alt={alt}
+        src={desktopImageLoaded && cardImage ? cardImage : loadingAnimation}
+        alt={alt || "vallarasu k"}
         className="profile-image img-fluid d-md-block d-none"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={mobileImageLoaded ? mobileProfileImage : loadingAnimation}
-        alt={alt}
+        src={
+          mobileImageLoaded && mobileProfileImage
+            ? mobileProfileImage
+            : loadingAnimation
+        }
+        alt={alt || "vallarasu k"}
         className="profile-image img-fluid d-md-none"
         loading="lazy"
         decoding="async"
       />
-    </Link>
+    </>
   );
 };
 

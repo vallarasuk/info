@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 const ProfileInfo = ({ name, email }) => {
   const roles = [
     "Software Developer",
-    "WordPress Plugin Developer",
+    "WordPress Developer",
     "React Developer",
   ];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
