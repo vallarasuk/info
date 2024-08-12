@@ -56,22 +56,26 @@
     -7px -7px 20px #ffffff;
 }
 
-.social-link.linkedin {
+.social-link.linkedin,
+.social-link.linkedin:hover {
   background-color: #0077b5;
   color: #fff;
 }
 
-.social-link.github {
+.social-link.github,
+.social-link.github:hover {
   background-color: #333;
   color: #fff;
 }
 
-.social-link.mail {
+.social-link.mail,
+.social-link.mail:hover {
   background-color: #ff6600;
   color: #fff;
 }
 
-.social-link.whatsapp {
+.social-link.whatsapp,
+.social-link.whatsapp:hover {
   background-color: #25D366;
   color: #fff;
 }
