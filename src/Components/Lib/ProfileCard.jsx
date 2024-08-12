@@ -21,6 +21,7 @@ const ProfileCard = () => {
     resumeFileName,
     mobile,
     loadingAnimation,
+    mobileProfileImage
   } = HomeContent;
 
   useEffect(() => {
@@ -50,6 +51,7 @@ const ProfileCard = () => {
         <>
           <ProfileImage
             cardImage={cardImage}
+            mobileProfileImage={mobileProfileImage}
             alt={name}
             loadingAnimation={loadingAnimation}
           />

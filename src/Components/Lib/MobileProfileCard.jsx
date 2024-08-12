@@ -40,6 +40,7 @@ const MobileProfileCard = () => {
       <div className="text-center">
         {/* Use the ProfileImage component */}
         <ProfileImage
+          cardImage={cardImage}
           mobileProfileImage={mobileProfileImage}
           alt={name}
           loadingAnimation={loadingAnimation}
@@ -47,12 +48,7 @@ const MobileProfileCard = () => {
 
         {/* Use the ProfileInfo component */}
 
-        <ProfileInfo
-          cardImage={cardImage}
-          name={name}
-          role={role}
-          email={email}
-        />
+        <ProfileInfo name={name} role={role} email={email} />
 
         {/* Use the SocialLinks component */}
         <SocialLinks
