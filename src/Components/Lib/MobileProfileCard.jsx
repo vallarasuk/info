@@ -18,6 +18,8 @@ const MobileProfileCard = () => {
     mobileProfileImage,
     resumeDownloadLink,
     resumeFileName,
+    loadingAnimation,
+    mobile,
   } = HomeContent;
 
   // Define the animation effect for the profile card
@@ -36,7 +38,11 @@ const MobileProfileCard = () => {
     >
       <div className="text-center">
         {/* Use the ProfileImage component */}
-        <ProfileImage mobileProfileImage={mobileProfileImage} alt={name} />
+        <ProfileImage
+          mobileProfileImage={mobileProfileImage}
+          alt={name}
+          loadingAnimation={loadingAnimation}
+        />
 
         {/* Use the ProfileInfo component */}
         <ProfileInfo name={name} role={role} email={email} />
@@ -46,6 +52,7 @@ const MobileProfileCard = () => {
           linkedInProfileLink={linkedInProfileLink}
           githubProfileLink={githubProfileLink}
           emailTo={emailTo}
+          mobile={mobile}
         />
         {/* Use the Resume component */}
         <Resume

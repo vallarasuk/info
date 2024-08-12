@@ -13,7 +13,7 @@ import ProfileCard from "./Components/Lib/ProfileCard";
 import "./Components/Styles/App.css";
 import "./Components/Styles/AppOne.css";
 
-import { RiseLoader } from "react-spinners";
+import MainLoaderScreen from "./Components/Lib/LoaderScreen/MainScreenLoader";
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));
@@ -23,8 +23,15 @@ const Contact = lazy(() => import("./Components/Contact"));
 
 const AppMain = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const { name, role, titleIcon, keywords, cardImage, siteUrl, twitterHandle } =
-    HomeContent;
+  const {
+    name,
+    role,
+    titleIcon,
+    keywords,
+    cardImage,
+    siteUrl,
+    twitterHandle,
+  } = HomeContent;
 
   useEffect(() => {
     // Simulate loading time
@@ -73,13 +80,7 @@ const AppMain = () => {
               <div className="col-lg-8 px-lg-3 py-md-2">
                 <div className="split-screen-container pt-md-4">
                   <Suspense>
-                    {isLoading ? (
-                      <div className="loading-container">
-                        <RiseLoader color="#000000" />
-                      </div>
-                    ) : (
-                      <ContentSection />
-                    )}
+                    {isLoading ? <MainLoaderScreen /> : <ContentSection />}
                   </Suspense>
                 </div>
                 {/* Footer section */}

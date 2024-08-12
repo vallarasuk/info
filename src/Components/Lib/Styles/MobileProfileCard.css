@@ -15,7 +15,7 @@
     width: 250px;
     height: 250px;
   }
-  
+
 }
 
 .profile-image:hover {
@@ -45,15 +45,15 @@
   padding: 15px;
   border-radius: 50%;
   background-color: #f0f0f0;
-  box-shadow: 10px 10px 30px #bebebe, 
-             -10px -10px 30px #ffffff;
+  box-shadow: 10px 10px 30px #bebebe,
+    -10px -10px 30px #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-link:hover {
   transform: translateY(-3px);
-  box-shadow: 7px 7px 20px #bebebe, 
-             -7px -7px 20px #ffffff;
+  box-shadow: 7px 7px 20px #bebebe,
+    -7px -7px 20px #ffffff;
 }
 
 .social-link.linkedin {
@@ -68,5 +68,10 @@
 
 .social-link.mail {
   background-color: #ff6600;
+  color: #fff;
+}
+
+.social-link.whatsapp {
+  background-color: #25D366;
   color: #fff;
 }

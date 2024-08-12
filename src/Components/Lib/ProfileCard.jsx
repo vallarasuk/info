@@ -19,9 +19,9 @@ const ProfileCard = () => {
     emailTo,
     resumeDownloadLink,
     resumeFileName,
-    mobileProfileImage
+    mobile,
+    loadingAnimation
   } = HomeContent;
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -48,12 +48,17 @@ const ProfileCard = () => {
       )}
       {!isLoading && (
         <>
-          <ProfileImage imageSrc={cardImage} alt={name} />
+          <ProfileImage
+            imageSrc={cardImage}
+            alt={name}
+            loadingAnimation={loadingAnimation}
+          />
           <ProfileInfo name={name} roles={roles} email={email} />
           <SocialLinks
             linkedInProfileLink={linkedInProfileLink}
             githubProfileLink={githubProfileLink}
             emailTo={emailTo}
+            mobile={mobile}
           />
           <Resume
             resumeDownloadLink={resumeDownloadLink}
