@@ -20,7 +20,7 @@ const ProfileCard = () => {
     resumeDownloadLink,
     resumeFileName,
     mobile,
-    loadingAnimation
+    loadingAnimation,
   } = HomeContent;
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const ProfileCard = () => {
       {!isLoading && (
         <>
           <ProfileImage
-            imageSrc={cardImage}
+            cardImage={cardImage}
             alt={name}
             loadingAnimation={loadingAnimation}
           />

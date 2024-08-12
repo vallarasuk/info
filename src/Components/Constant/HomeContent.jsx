@@ -62,7 +62,6 @@ const HomePageData = {
     "I thrive on creating digital experiences that leave a lasting impression. Let's collaborate to bring your ideas to life with creativity and technical excellence.",
     "Feel free to explore my projects, and don't hesitate to reach out if you're interested in collaboration or have questions. Your visit is genuinely appreciated, and I'm excited about the potential to create something remarkable together!",
   ],
-  imageURL: "https://example.com/your-image.jpg",
   projectButtonName: "View Projects",
   projectButtonlink: "/projects",
   skillsTitle: "Skills and Expertise",
@@ -244,7 +243,7 @@ const HomePageData = {
     // Additional high-intent keywords (user searching for specific solutions)
     "hire React developer India",
     "React Native mobile app services Bangalore",
-    "Bangalore WordPress plugin developer",
+    "Bangalore WordPress developer",
     "JavaScript development Bangalore",
     "web development company Bangalore",
   ],
