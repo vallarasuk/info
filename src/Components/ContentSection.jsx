@@ -53,7 +53,7 @@ const ContentSection = () => {
 
       <MobileProfileCard />
 
-      <div className="p-3 pl-md-0">
+      <div className="p-md-3 pl-md-0">
         <div className="mobile-content-section ">
           <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4 ">
             {title}
@@ -64,13 +64,6 @@ const ContentSection = () => {
             ))}
           </div>
         </div>
-        {/* About Section */}
-        <section className="about">
-          <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">
-            About Me
-          </h2>
-          <p className="px-4">{aboutDescription}</p>
-        </section>
 
         {/* Work Section */}
 
@@ -102,7 +95,13 @@ const ContentSection = () => {
             </Row>
           </div>
         </section>
-
+        {/* About Section */}
+        <section className="about">
+          <h2 className="text-end bg-secondary-subtle p-2 text-uppercase rounded-3 shadow mb-4">
+            About Me
+          </h2>
+          <p className="px-4">{aboutDescription}</p>
+        </section>
         {/* Projects Section */}
         {/* <section className="projects">
         <h2>Projects</h2>

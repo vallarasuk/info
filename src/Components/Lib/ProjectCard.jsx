@@ -25,7 +25,7 @@ const ProjectCard = ({
             <img
               src={previewImage}
               alt={title ? `${title} Project` : "Project"}
-              className="card-img-top rounded"
+              className="card-img-top"
               style={{ maxWidth: "100%", height: "auto" }}
               loading="lazy"
             />

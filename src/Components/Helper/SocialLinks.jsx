@@ -1,11 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types"; // For prop type validation
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // SocialLinks Component
-const SocialLinks = ({ linkedInProfileLink, githubProfileLink, emailTo }) => {
+const SocialLinks = ({
+  linkedInProfileLink,
+  githubProfileLink,
+  emailTo,
+  mobile,
+}) => {
   // Check if the link is a valid URL
   const isValidUrl = (url) => {
     try {
@@ -19,8 +28,20 @@ const SocialLinks = ({ linkedInProfileLink, githubProfileLink, emailTo }) => {
   return (
     <div className="mt-4 social-links">
       <div className="row justify-content-center">
+        {mobile && (
+          <div className="col-auto p-1">
+            <a
+              href={`https://wa.me/${mobile}`} // Correct link format
+              className="social-link whatsapp shadow"
+              aria-label="Send WhatsApp message"
+            >
+              <FontAwesomeIcon size="xl" icon={faWhatsapp} />
+            </a>
+          </div>
+        )}
+
         {linkedInProfileLink && isValidUrl(linkedInProfileLink) && (
-          <div className="col-auto">
+          <div className="col-auto p-1">
             <a
               href={linkedInProfileLink}
               target="_blank"
@@ -33,7 +54,7 @@ const SocialLinks = ({ linkedInProfileLink, githubProfileLink, emailTo }) => {
           </div>
         )}
         {githubProfileLink && isValidUrl(githubProfileLink) && (
-          <div className="col-auto">
+          <div className="col-auto p-1">
             <a
               href={githubProfileLink}
               target="_blank"
@@ -46,7 +67,7 @@ const SocialLinks = ({ linkedInProfileLink, githubProfileLink, emailTo }) => {
           </div>
         )}
         {emailTo && (
-          <div className="col-auto">
+          <div className="col-auto p-1">
             <a
               href={`mailto:${emailTo}`}
               className="social-link mail shadow"
@@ -66,6 +87,7 @@ SocialLinks.propTypes = {
   linkedInProfileLink: PropTypes.string,
   githubProfileLink: PropTypes.string,
   emailTo: PropTypes.string,
+  whatsappLink: PropTypes.string,
 };
 
 // Default props
@@ -73,6 +95,7 @@ SocialLinks.defaultProps = {
   linkedInProfileLink: "",
   githubProfileLink: "",
   emailTo: "",
+  whatsappLink: "",
 };
 
 export default SocialLinks;
