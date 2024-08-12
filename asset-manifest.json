@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8139ad3c.css",
-    "main.js": "/static/js/main.7376ae22.js",
+    "main.css": "/static/css/main.1c4fef54.css",
+    "main.js": "/static/js/main.9da5f7ef.js",
     "static/css/897.73783bf8.chunk.css": "/static/css/897.73783bf8.chunk.css",
     "static/js/897.24008705.chunk.js": "/static/js/897.24008705.chunk.js",
     "static/css/982.32df15c1.chunk.css": "/static/css/982.32df15c1.chunk.css",
@@ -15,10 +15,12 @@
     "static/media/image.png": "/static/media/image.3863ad7c95d5dfd910b3.png",
     "static/media/Nexsens X2 page.png": "/static/media/Nexsens X2 page.6f7c94d44d7fa9675e28.png",
     "static/media/cb 250 page.png": "/static/media/cb 250 page.ce107d1ac4937f1c4e30.png",
+    "static/media/profile-loading.gif": "/static/media/profile-loading.e0db7f381c052f466f46.gif",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/macroTouch.png": "/static/media/macroTouch.476fe3bba44e1979fffb.png",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/YSI page.png": "/static/media/YSI page.002c6296c9dbcaef47d0.png",
+    "static/media/Jelly-Preloader.webp": "/static/media/Jelly-Preloader.1ed5d4af8c29156edd40.webp",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/portfolio 2.png": "/static/media/portfolio 2.7e765bd9a49346b3c792.png",
     "static/media/about internet blog.png": "/static/media/about internet blog.ae3c98afa033fa7c4915.png",
@@ -32,8 +34,8 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
-    "main.8139ad3c.css.map": "/static/css/main.8139ad3c.css.map",
-    "main.7376ae22.js.map": "/static/js/main.7376ae22.js.map",
+    "main.1c4fef54.css.map": "/static/css/main.1c4fef54.css.map",
+    "main.9da5f7ef.js.map": "/static/js/main.9da5f7ef.js.map",
     "897.73783bf8.chunk.css.map": "/static/css/897.73783bf8.chunk.css.map",
     "897.24008705.chunk.js.map": "/static/js/897.24008705.chunk.js.map",
     "982.32df15c1.chunk.css.map": "/static/css/982.32df15c1.chunk.css.map",
@@ -44,7 +46,7 @@
     "791.b76435bb.chunk.js.map": "/static/js/791.b76435bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8139ad3c.css",
-    "static/js/main.7376ae22.js"
+    "static/css/main.1c4fef54.css",
+    "static/js/main.9da5f7ef.js"
   ]
 }
