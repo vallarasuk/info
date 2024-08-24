@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6689904.css",
-    "main.js": "/static/js/main.2d90010c.js",
+    "main.js": "/static/js/main.706e05b7.js",
     "static/css/897.73783bf8.chunk.css": "/static/css/897.73783bf8.chunk.css",
     "static/js/897.c7dbcf60.chunk.js": "/static/js/897.c7dbcf60.chunk.js",
     "static/css/982.32df15c1.chunk.css": "/static/css/982.32df15c1.chunk.css",
@@ -25,7 +25,7 @@
     "static/media/portfolio 2.png": "/static/media/portfolio 2.7e765bd9a49346b3c792.png",
     "static/media/about internet blog.png": "/static/media/about internet blog.ae3c98afa033fa7c4915.png",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
-    "static/media/vallarasuReactDeveloper.pdf": "/static/media/vallarasuReactDeveloper.ca04bbd4acdd2447f541.pdf",
+    "static/media/vallarasuk.pdf": "/static/media/vallarasuk.4053758d7a85e6efb569.pdf",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/otto landing.png": "/static/media/otto landing.841cd6475913b115511b.png",
     "static/media/Nexsens Contact us page.png": "/static/media/Nexsens Contact us page.797c91277b83006355a4.png",
@@ -35,7 +35,7 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
     "main.e6689904.css.map": "/static/css/main.e6689904.css.map",
-    "main.2d90010c.js.map": "/static/js/main.2d90010c.js.map",
+    "main.706e05b7.js.map": "/static/js/main.706e05b7.js.map",
     "897.73783bf8.chunk.css.map": "/static/css/897.73783bf8.chunk.css.map",
     "897.c7dbcf60.chunk.js.map": "/static/js/897.c7dbcf60.chunk.js.map",
     "982.32df15c1.chunk.css.map": "/static/css/982.32df15c1.chunk.css.map",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.e6689904.css",
-    "static/js/main.2d90010c.js"
+    "static/js/main.706e05b7.js"
   ]
 }
