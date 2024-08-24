@@ -7,8 +7,8 @@ const SeoMetaTags = ({
   titleIcon,
   keywords,
   cardImage,
-  twitterHandle  ,
-  siteUrl , 
+  twitterHandle,
+  siteUrl,
 }) => {
   return (
     <Helmet>
@@ -42,6 +42,21 @@ const SeoMetaTags = ({
       <meta name="twitter:image" content={cardImage} />
       <link rel="icon" href={cardImage} type="image/png" />
       <link rel="icon" href={cardImage} type="image/x-icon" />
+
+      {/* JSON-LD Schema Markup */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Vallarasu Kanthasamy",
+          "url": "https://vallarasuk.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/vallarasu-k/"
+          ]
+        }
+        `}
+      </script>
     </Helmet>
   );
 };

@@ -51,9 +51,9 @@ const ProfileInfo = ({ name, email }) => {
 
   return (
     <div className="profile-info">
-      <animated.h2 className="mt-3 my-name" style={bottomAnimation}>
+      <animated.h1 className="mt-3 my-name" style={bottomAnimation}>
         {name}
-      </animated.h2>
+      </animated.h1>
       <animated.p className="mt-4 fw-semibold my-role h5" style={roleAnimation}>
         {currentRole}
       </animated.p>
