@@ -41,7 +41,7 @@ const HomePageData = {
   mobileProfileImage: require("../Assets/vallarasuk.jpeg"),
   loadingAnimation: require("../Assets/loading-gifs/profile-loading.gif"),
   mainScreenLoading: require("../Assets/loading-gifs/Jelly-Preloader.webp"),
-  resumeDownloadLink: require("../Assets/vallarasuReactDeveloper.pdf"),
+  resumeDownloadLink: require("../Assets/resume/vallarasuk.pdf"),
   resumeFileName: "Vallarasu K",
   name: "Vallarasu Kanthasamy",
   roles: ["React Developer", "WordPress Developer", "Full-Stack Developer"],
