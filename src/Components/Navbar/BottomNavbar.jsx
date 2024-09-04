@@ -1,12 +1,12 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHome,
-  faUser,
   faBriefcase,
   faEnvelope,
+  faHome,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../Styles/BottomNavbar.css";
 
 const BottomNavbar = () => {

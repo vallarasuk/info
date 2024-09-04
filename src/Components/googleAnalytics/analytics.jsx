@@ -1,7 +1,7 @@
 // src/Components/googleAnalytics/analytics.js
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 import GoogleTagManager from "./GoogleTagManager"; // Import the GTM component
 
 const measurementId = "G-SKZ1Q8BBSV"; // Replace with your GA4 Measurement ID
@@ -27,4 +27,5 @@ const GoogleAnalytics = () => {
   );
 };
 
-export { initializeAnalytics, GoogleAnalytics };
+export { GoogleAnalytics, initializeAnalytics };
+

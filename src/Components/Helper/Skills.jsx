@@ -1,6 +1,6 @@
-import React from "react";
-import { useSpring, animated } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { animated, useSpring } from "react-spring";
 
 const Skill = ({ skills, skillsTitle }) => {
   // Animation configuration for the skills section

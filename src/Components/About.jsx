@@ -1,8 +1,8 @@
 import React from "react";
-import "./Styles/About.css";
+import HomePageData from "./Constant/HomeContent";
 import StudyTimeline from "./Helper/Studies";
 import Title from "./Helper/Title";
-import HomePageData from "./Constant/HomeContent";
+import "./Styles/About.css";
 
 
 const About = () => {

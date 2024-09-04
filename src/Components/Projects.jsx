@@ -1,8 +1,8 @@
+import { motion } from "framer-motion";
 import React from "react";
-import ProjectCard from "./Lib/ProjectCard";
 import HomePageData from "./Constant/HomeContent";
 import Title from "./Helper/Title";
-import { motion } from "framer-motion";
+import ProjectCard from "./Lib/ProjectCard";
 
 const Projects = () => {
   const { projectsData } = HomePageData;
