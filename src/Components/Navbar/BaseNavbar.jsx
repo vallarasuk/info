@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { Navbar as BootstrapNavbar, Container } from "react-bootstrap";
-import "../Styles/Navbar.css";
 import { useMediaQuery } from "react-responsive";
+import "../Styles/Navbar.css";
 
 const BaseNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);

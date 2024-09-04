@@ -1,15 +1,15 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { useMediaQuery } from "react-responsive";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./Components/Navbar/Navbar";
 // import Footer from "./Components/Footer/Footer";
-import "./Components/Styles/App.css";
-import "./Components/Styles/AppOne.css";
+import NotFound from "./Components/Helper/NotFound";
 import ProfileCard from "./Components/Lib/ProfileCard";
 import BottomNavbar from "./Components/Navbar/BottomNavbar";
-import NotFound from "./Components/Helper/NotFound";
+import "./Components/Styles/App.css";
+import "./Components/Styles/AppOne.css";
 
 // Lazy load components
 const Home = lazy(() => import("./Components/Home"));

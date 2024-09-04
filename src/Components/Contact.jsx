@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Button,
-  Alert,
-  Modal,
-} from "react-bootstrap";
 import emailjs from "emailjs-com";
+import React, { useState } from "react";
+import {
+  Alert,
+  Button,
+  Col,
+  Container,
+  Form,
+  Modal,
+  Row,
+} from "react-bootstrap";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

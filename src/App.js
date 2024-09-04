@@ -1,9 +1,9 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import Navbar from "./Components/Navbar/Navbar";
 import "./Components/Styles/App.css";
 
 // Lazy load components

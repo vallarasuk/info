@@ -1,11 +1,11 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import { animated, useSpring } from "react-spring";
-import "./Styles/Home.css";
 import HomeContent from "./Constant/HomeContent";
-import { useMediaQuery } from "react-responsive";
-import MobileProfileCard from "./Lib/MobileProfileCard";
 import SeoMetaTags from "./Constant/SeoMetaTags";
+import MobileProfileCard from "./Lib/MobileProfileCard";
+import "./Styles/Home.css";
 
 const Home = () => {
   const {

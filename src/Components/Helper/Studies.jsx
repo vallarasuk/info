@@ -1,6 +1,6 @@
-import React from "react";
+import { faCertificate, faGraduationCap, faSchool } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faCertificate, faSchool } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import "../Styles/TimeLine.css"; // Include Bootstrap styles
 

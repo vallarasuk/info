@@ -1,11 +1,11 @@
 // src/index.js
-import React from "react";
-import { createRoot } from "react-dom/client";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import "animate.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import { createRoot } from "react-dom/client";
 import AppMain from "./AppMain";
 import "./Components/Styles/App.css";
 

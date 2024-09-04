@@ -1,19 +1,19 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faReact,
-  faJs,
-  faHtml5,
-  faCss3Alt,
   faBootstrap,
+  faCss3Alt,
   faGit,
+  faHtml5,
+  faJs,
   faNodeJs,
+  faReact,
   faWordpressSimple,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faMobileAlt,
   faEnvelope,
+  faMobileAlt,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
 
 // Add the imported icons to the Font Awesome library
 library.add(

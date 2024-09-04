@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { Navbar as BootstrapNavbar, Container, Nav } from "react-bootstrap";
+import { useMediaQuery } from "react-responsive";
 import { NavLink } from "react-router-dom";
 import "../Styles/Navbar.css";
-import { useMediaQuery } from "react-responsive";
 
 const CustomNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
